@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/JCTagListView.svg?style=flat)](http://cocoapods.org/pods/JCTagListView)
 [![Platform](https://img.shields.io/cocoapods/p/JCTagListView.svg?style=flat)](http://cocoapods.org/pods/JCTagListView)
 
-Support multiple section, and can add headerView and footerView.
+Support delete tags.
 
 <img width="320" src="./ScreenShot.png"> 
 
