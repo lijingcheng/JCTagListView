@@ -1,0 +1,14 @@
+PODS:
+  - JCTagListView (0.0.1)
+
+DEPENDENCIES:
+  - JCTagListView (from `../`)
+
+EXTERNAL SOURCES:
+  JCTagListView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JCTagListView: 7010fc92bbb11ddde8464430148992ee9efaccca
+
+COCOAPODS: 0.37.2

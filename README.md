@@ -5,25 +5,22 @@
 [![License](https://img.shields.io/cocoapods/l/JCTagListView.svg?style=flat)](http://cocoapods.org/pods/JCTagListView)
 [![Platform](https://img.shields.io/cocoapods/p/JCTagListView.svg?style=flat)](http://cocoapods.org/pods/JCTagListView)
 
-## Usage
+Support multiple section, and can add headerView and footerView.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+<img width="320" src="./ScreenShot.png"> 
 
 ## Installation
 
-JCTagListView is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
 pod "JCTagListView"
-```
+
+## Usage
+
+Refer to demo
 
 ## Author
 
-lijingcheng, bj_lijingcheng@163.com
+[李京城](http://lijingcheng.github.io)
 
 ## License
 
-JCTagListView is available under the MIT license. See the LICENSE file for more info.
+MIT

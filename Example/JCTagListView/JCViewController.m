@@ -7,8 +7,11 @@
 //
 
 #import "JCViewController.h"
+#import "JCTagListView.h"
 
 @interface JCViewController ()
+
+@property (nonatomic, weak) IBOutlet JCTagListView *tagListView;
 
 @end
 
@@ -17,13 +20,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self.tagListView.tags addObjectsFromArray:@[@"NSString", @"NSMutableString", @"NSArray", @"UIAlertView", @"UITapGestureRecognizer", @"IBOutlet", @"IBAction", @"id", @"UIView", @"UIStatusBar", @"UITableViewController", @"UIStepper", @"UISegmentedControl", @"UICollectionViewController", @"UISearchBar", @"UIToolbar", @"UIPageControl", @"UIActionSheet", @"NSMutableArray", @"NSDictionary", @"NSMutableDictionary", @"NSSet", @"NSMutableSet", @"NSData", @"NSMutableData", @"NSDate", @"NSCalendar", @"UIButton", @"UILabel", @"UITextField", @"UITextView", @"UIImageView", @"UITableView", @"UICollectionView", @"UIViewController"]];
 }
 
-- (void)didReceiveMemoryWarning
+#pragma mark - IBAction
+
+- (IBAction)delete:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self.tagListView.tags removeObjectsInArray:self.tagListView.seletedTags];
+    [self.tagListView.seletedTags removeAllObjects];
+    
+    [self.tagListView.collectionView reloadData];
 }
 
 @end

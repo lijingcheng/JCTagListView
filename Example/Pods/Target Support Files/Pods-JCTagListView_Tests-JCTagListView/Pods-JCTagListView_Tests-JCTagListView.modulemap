@@ -1,0 +1,6 @@
+framework module JCTagListView {
+  umbrella header "Pods-JCTagListView_Tests-JCTagListView-umbrella.h"
+
+  export *
+  module * { export * }
+}

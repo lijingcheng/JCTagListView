@@ -42,7 +42,7 @@
 		3986005938949B99C000A18E /* Pods-JCTagListView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCTagListView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCTagListView_Example/Pods-JCTagListView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3A2A249F1374E0901C9316A2 /* Pods-JCTagListView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCTagListView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCTagListView_Tests/Pods-JCTagListView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3DB99E4AEE2186A0143DA2C9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* JCTagListView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = JCTagListView.app; path = JCTagListView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* JCTagListView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCTagListView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -55,7 +55,7 @@
 		6003F5A5195388D20070C39A /* JCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* JCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = JCTagListView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* JCTagListView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCTagListView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -108,8 +108,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* JCTagListView.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* JCTagListView_Example.app */,
+				6003F5AE195388D20070C39A /* JCTagListView_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,10 +132,8 @@
 			children = (
 				6003F59C195388D20070C39A /* JCAppDelegate.h */,
 				6003F59D195388D20070C39A /* JCAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* JCViewController.h */,
 				6003F5A6195388D20070C39A /* JCViewController.m */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for JCTagListView";
@@ -145,7 +143,9 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F595195388D20070C39A /* JCTagListView-Info.plist */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* JCTagListView-Prefix.pch */,
@@ -213,7 +213,7 @@
 			);
 			name = JCTagListView_Example;
 			productName = JCTagListView;
-			productReference = 6003F58A195388D20070C39A /* JCTagListView.app */;
+			productReference = 6003F58A195388D20070C39A /* JCTagListView_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* JCTagListView_Tests */ = {
@@ -234,7 +234,7 @@
 			);
 			name = JCTagListView_Tests;
 			productName = JCTagListViewTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* JCTagListView_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
