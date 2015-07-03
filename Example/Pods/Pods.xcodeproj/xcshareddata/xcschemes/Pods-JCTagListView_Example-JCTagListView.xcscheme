@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9C7F82101946DA7AF7188266"
-               BuildableName = "JCTagListView.framework"
+               BlueprintIdentifier = "1AD953D62E05454D8C4D267B"
+               BuildableName = "libPods-JCTagListView_Example-JCTagListView.a"
                BlueprintName = "Pods-JCTagListView_Example-JCTagListView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
@@ -39,6 +39,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1AD953D62E05454D8C4D267B"
+            BuildableName = "libPods-JCTagListView_Example-JCTagListView.a"
+            BlueprintName = "Pods-JCTagListView_Example-JCTagListView"
+            ReferencedContainer = "container:Pods.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

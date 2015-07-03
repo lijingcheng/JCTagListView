@@ -7,403 +7,350 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02CF6405162A3DB219BD635E /* JCTagListView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BCFC991228F5B00D2F4187F7 /* JCTagListView.bundle */; };
-		1C8156AFEE1420E4D710D8B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 388CFAE847E9B2DC368F35C4 /* Foundation.framework */; };
-		1EF7E372CB5A1A1B3C90277D /* Pods-JCTagListView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7BEC3742B836B5D3506A4B3 /* Pods-JCTagListView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33825CDCC67407598E280529 /* JCTagCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 71F7E49D66700854D350624B /* JCTagCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A1997D8E40E59879D149920 /* Pods-JCTagListView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5810E7844EA9DBB5ED2FFB56 /* Pods-JCTagListView_Tests-dummy.m */; };
-		42B58F0077E2BDAE6544830C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 388CFAE847E9B2DC368F35C4 /* Foundation.framework */; };
-		4A91D29193CDB6FBC33873B6 /* JCCollectionViewTagFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C76408C40968F03CDDD9D /* JCCollectionViewTagFlowLayout.m */; };
-		5901149A0F434D78CBF2D36D /* JCCollectionViewTagFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C76408C40968F03CDDD9D /* JCCollectionViewTagFlowLayout.m */; };
-		635B4A693360B0E4E5512C6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 388CFAE847E9B2DC368F35C4 /* Foundation.framework */; };
-		70061A61BE111AAFBAC32D7D /* Pods-JCTagListView_Example-JCTagListView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B338E9815AB2DBDF5475F501 /* Pods-JCTagListView_Example-JCTagListView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		815CFBE6212B47D605293800 /* JCTagListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 66D3070795E04A1644C5A148 /* JCTagListView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87ECBC10EEF6B2A55DE606D8 /* Pods-JCTagListView_Tests-JCTagListView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24FD63C1369905262F72C2A0 /* Pods-JCTagListView_Tests-JCTagListView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		957DF186A27BAF02A6E15126 /* Pods-JCTagListView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F6D422C9FB0A2B63AE1BB9C /* Pods-JCTagListView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDD64C141AE2D3885077B3C1 /* JCTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D17265FF17036550AE0DFC4 /* JCTagCell.m */; };
-		BE5531D485A599B54A7FAAE2 /* Pods-JCTagListView_Example-JCTagListView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F145C31BA4BCA8F1F13EAA /* Pods-JCTagListView_Example-JCTagListView-dummy.m */; };
-		BF519E5333AF4D3EC80A33A1 /* JCTagListView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FC1D7E5EC553E025D65ED /* JCTagListView.bundle */; };
-		C28DBE98587D51DC70BA0199 /* JCTagCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 71F7E49D66700854D350624B /* JCTagCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD2053D5833B5DF0270B61FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 388CFAE847E9B2DC368F35C4 /* Foundation.framework */; };
-		D4B4857426F23C7F21069FB9 /* JCCollectionViewTagFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = B9C4BEDD510B404C148419C5 /* JCCollectionViewTagFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC09D44C00F60247AABDDB34 /* Pods-JCTagListView_Tests-JCTagListView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7898190EFF67567046680DF2 /* Pods-JCTagListView_Tests-JCTagListView-dummy.m */; };
-		DD058736CA1B0276AF1AA5F1 /* JCTagListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3280D6BB1FDD1EA98784A1 /* JCTagListView.m */; };
-		ED23D6B4561A2CFEB9F8DD32 /* JCTagListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3280D6BB1FDD1EA98784A1 /* JCTagListView.m */; };
-		EF1BD36B7D91F7C3E802C0C0 /* JCTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D17265FF17036550AE0DFC4 /* JCTagCell.m */; };
-		F800E019FFFC2E48146346A2 /* JCTagListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 66D3070795E04A1644C5A148 /* JCTagListView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9BE64E2BBBACC8D8A502AAA /* Pods-JCTagListView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E68111FE13AA29CC8A11C4E /* Pods-JCTagListView_Example-dummy.m */; };
-		F9CC29885E92CCA8D4E8C2C0 /* JCCollectionViewTagFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = B9C4BEDD510B404C148419C5 /* JCCollectionViewTagFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01F0AFFB175FDCE8516580C7 /* JCTagListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E83C91326EF62DCCF76675E /* JCTagListView.m */; };
+		03834F2CAEE9517991846C16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E06C88D8AFF731CFB8E6143 /* Foundation.framework */; };
+		11E83009EAC568189B7866BB /* JCTagListView.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAB5BEA081DEA2EC059AAA /* JCTagListView.h */; };
+		20F4467A7FC5DCF8D5D7A733 /* JCTagCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AC125EA135A435D1BC67EBC /* JCTagCell.h */; };
+		31312143877CBA670B090FEB /* JCTagListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E83C91326EF62DCCF76675E /* JCTagListView.m */; };
+		41C36370A41973FF685BB313 /* JCTagListView.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAB5BEA081DEA2EC059AAA /* JCTagListView.h */; };
+		42DB3F510167B124E78EC14B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E06C88D8AFF731CFB8E6143 /* Foundation.framework */; };
+		4E09F5FCC47165C3C86C305D /* JCTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6D1FDA04F7A294BC4C5B67 /* JCTagCell.m */; };
+		51EBF14BF2C4195AB1BF1204 /* JCCollectionViewTagFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA0BE22060FECA7430555DE /* JCCollectionViewTagFlowLayout.m */; };
+		62BD4096A693EF29CFF5D29A /* Pods-JCTagListView_Example-JCTagListView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F692E618D470C32A8D85EC /* Pods-JCTagListView_Example-JCTagListView-dummy.m */; };
+		71A72DE20AA6BF5ABD1CF867 /* JCTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6D1FDA04F7A294BC4C5B67 /* JCTagCell.m */; };
+		71ECB2B3EC30F3162BFBFAB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E06C88D8AFF731CFB8E6143 /* Foundation.framework */; };
+		76FEAD0B8B4D0382227E79E2 /* JCTagCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AC125EA135A435D1BC67EBC /* JCTagCell.h */; };
+		7A8B847C288968FF346C2619 /* Pods-JCTagListView_Tests-JCTagListView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4428A124D47E042DE7902AF9 /* Pods-JCTagListView_Tests-JCTagListView-dummy.m */; };
+		7D708BAA825D3A9D84E3A2B3 /* Pods-JCTagListView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38770CD94A7BFC713E339E46 /* Pods-JCTagListView_Tests-dummy.m */; };
+		8FE71A3DA4286359780228D5 /* JCCollectionViewTagFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 300D157DB9B1776DDF97A7A1 /* JCCollectionViewTagFlowLayout.h */; };
+		A909A5BE5DB840F29FCD00C5 /* Pods-JCTagListView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB54B3CEF03DD03AB55DDC4 /* Pods-JCTagListView_Example-dummy.m */; };
+		C19F2DE8A6A7963128E25A93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E06C88D8AFF731CFB8E6143 /* Foundation.framework */; };
+		C31F2227E5672063AB4C2072 /* JCCollectionViewTagFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA0BE22060FECA7430555DE /* JCCollectionViewTagFlowLayout.m */; };
+		CCF9F21B9291145B2D4568D5 /* JCCollectionViewTagFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 300D157DB9B1776DDF97A7A1 /* JCCollectionViewTagFlowLayout.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1C56D479400630E28D531673 /* PBXContainerItemProxy */ = {
+		1496C4F055ED0DBDD933BB01 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2B382477772017B92927CD8C /* Project object */;
+			containerPortal = 29764A37F253033B9D39A2E3 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9C7F82101946DA7AF7188266;
+			remoteGlobalIDString = 1AD953D62E05454D8C4D267B;
 			remoteInfo = "Pods-JCTagListView_Example-JCTagListView";
 		};
-		558744CBF51241D87F038F4E /* PBXContainerItemProxy */ = {
+		516153AF73C71A2213B4F5B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2B382477772017B92927CD8C /* Project object */;
+			containerPortal = 29764A37F253033B9D39A2E3 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 19A3A626D2E81A6151CA8FB3;
-			remoteInfo = "Pods-JCTagListView_Example-JCTagListView-JCTagListView";
-		};
-		62230A952BAA164588AB9E1E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2B382477772017B92927CD8C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 98B3E7549E955D2A4D5DD86F;
+			remoteGlobalIDString = 7EAEC99530EC673FE5F584D7;
 			remoteInfo = "Pods-JCTagListView_Tests-JCTagListView-JCTagListView";
 		};
-		75B23E0CAFE1BEFD918A5906 /* PBXContainerItemProxy */ = {
+		77F33F89F900B5FAD1706B5C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2B382477772017B92927CD8C /* Project object */;
+			containerPortal = 29764A37F253033B9D39A2E3 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FDA0CD0E5AFEBC9A0A8C5D54;
+			remoteGlobalIDString = D73E59555402DDD7FB698C80;
 			remoteInfo = "Pods-JCTagListView_Tests-JCTagListView";
+		};
+		9E965E3450DB0E31BAEE1115 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29764A37F253033B9D39A2E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75DDA7A69AD65E5200E39014;
+			remoteInfo = "Pods-JCTagListView_Example-JCTagListView-JCTagListView";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05481C1D4BFFA3E50B4CB620 /* Pods-JCTagListView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCTagListView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		18EAADDFC8A7F991E8CD1C7B /* Pods-JCTagListView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCTagListView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		20FF45EAFD51216362689DAF /* Pods-JCTagListView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCTagListView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		24F145C31BA4BCA8F1F13EAA /* Pods-JCTagListView_Example-JCTagListView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCTagListView_Example-JCTagListView-dummy.m"; sourceTree = "<group>"; };
-		24FD63C1369905262F72C2A0 /* Pods-JCTagListView_Tests-JCTagListView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-JCTagListView_Tests-JCTagListView-umbrella.h"; path = "../Pods-JCTagListView_Tests-JCTagListView/Pods-JCTagListView_Tests-JCTagListView-umbrella.h"; sourceTree = "<group>"; };
-		29333850DD87C8C0B3D3CFE1 /* Pods-JCTagListView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JCTagListView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		2C63F39D2B7B2A0BB93A9A26 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3650B53F95A669819E8F4934 /* Pods-JCTagListView_Tests-JCTagListView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCTagListView_Tests-JCTagListView.xcconfig"; path = "../Pods-JCTagListView_Tests-JCTagListView/Pods-JCTagListView_Tests-JCTagListView.xcconfig"; sourceTree = "<group>"; };
-		388CFAE847E9B2DC368F35C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3E0C76408C40968F03CDDD9D /* JCCollectionViewTagFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JCCollectionViewTagFlowLayout.m; sourceTree = "<group>"; };
-		3E3280D6BB1FDD1EA98784A1 /* JCTagListView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JCTagListView.m; sourceTree = "<group>"; };
-		3F6D422C9FB0A2B63AE1BB9C /* Pods-JCTagListView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCTagListView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		4D0C0269D3F5C769593B8FBD /* Pods-JCTagListView_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCTagListView_Tests-environment.h"; sourceTree = "<group>"; };
-		555FE46F61B6E2A44E253339 /* Pods-JCTagListView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCTagListView_Example-resources.sh"; sourceTree = "<group>"; };
-		5810E7844EA9DBB5ED2FFB56 /* Pods-JCTagListView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCTagListView_Tests-dummy.m"; sourceTree = "<group>"; };
-		5F0FC1D7E5EC553E025D65ED /* JCTagListView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCTagListView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FF02798F39ADAA430A283E7 /* Pods-JCTagListView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JCTagListView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6094D2C7F37692673EF7BB52 /* Pods-JCTagListView_Example-JCTagListView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCTagListView_Example-JCTagListView-Private.xcconfig"; sourceTree = "<group>"; };
-		659B1320FB92D96EF1DEFB14 /* Pods-JCTagListView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCTagListView_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		66D3070795E04A1644C5A148 /* JCTagListView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JCTagListView.h; sourceTree = "<group>"; };
-		6ECFC26C2318FE9024C4B4C1 /* Pods-JCTagListView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCTagListView_Tests-resources.sh"; sourceTree = "<group>"; };
-		709503BB5BE791FB630A22A0 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		71F7E49D66700854D350624B /* JCTagCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JCTagCell.h; sourceTree = "<group>"; };
-		7898190EFF67567046680DF2 /* Pods-JCTagListView_Tests-JCTagListView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-JCTagListView_Tests-JCTagListView-dummy.m"; path = "../Pods-JCTagListView_Tests-JCTagListView/Pods-JCTagListView_Tests-JCTagListView-dummy.m"; sourceTree = "<group>"; };
-		78CC82FB5139C067321F720A /* Pods-JCTagListView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCTagListView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8B282CA5ADDCC70967F6717D /* Pods-JCTagListView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCTagListView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8D17265FF17036550AE0DFC4 /* JCTagCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JCTagCell.m; sourceTree = "<group>"; };
-		8E68111FE13AA29CC8A11C4E /* Pods-JCTagListView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCTagListView_Example-dummy.m"; sourceTree = "<group>"; };
-		9209D4EF1B5E664EDE6ADEF7 /* Pods_JCTagListView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCTagListView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		98974E0282D8DE1A7EF17FE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98A02B97E9517F18EA9ECB69 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-JCTagListView_Tests-JCTagListView/Info.plist"; sourceTree = "<group>"; };
-		A07BAC3124F6FB6CDA83A30C /* Pods-JCTagListView_Tests-JCTagListView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCTagListView_Tests-JCTagListView-Private.xcconfig"; path = "../Pods-JCTagListView_Tests-JCTagListView/Pods-JCTagListView_Tests-JCTagListView-Private.xcconfig"; sourceTree = "<group>"; };
-		A50E78524E87A337A8BC5F7A /* Pods-JCTagListView_Example-JCTagListView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JCTagListView_Example-JCTagListView.modulemap"; sourceTree = "<group>"; };
-		ABEB7E04CF632153447FBA67 /* Pods-JCTagListView_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCTagListView_Example-environment.h"; sourceTree = "<group>"; };
-		B338E9815AB2DBDF5475F501 /* Pods-JCTagListView_Example-JCTagListView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCTagListView_Example-JCTagListView-umbrella.h"; sourceTree = "<group>"; };
-		B6E3A5012AD4D80E9F6BA5A6 /* JCTagListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JCTagListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9C4BEDD510B404C148419C5 /* JCCollectionViewTagFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JCCollectionViewTagFlowLayout.h; sourceTree = "<group>"; };
-		BCFC991228F5B00D2F4187F7 /* JCTagListView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCTagListView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7BEC3742B836B5D3506A4B3 /* Pods-JCTagListView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCTagListView_Example-umbrella.h"; sourceTree = "<group>"; };
-		CC580C3F399F1DD6D9FD101C /* Pods-JCTagListView_Example-JCTagListView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCTagListView_Example-JCTagListView.xcconfig"; sourceTree = "<group>"; };
-		CC5F04F0661C1F274D381E5B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEC3DC4C57A8D58FA5B30993 /* Pods-JCTagListView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JCTagListView_Example.modulemap"; sourceTree = "<group>"; };
-		CF1391DD787BE7DF46AEE544 /* Pods-JCTagListView_Example-JCTagListView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCTagListView_Example-JCTagListView-prefix.pch"; sourceTree = "<group>"; };
-		D971015CF760DBCC6AC20616 /* JCTagListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JCTagListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC03270DEE3D12ED0E16AAEC /* Pods-JCTagListView_Tests-JCTagListView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-JCTagListView_Tests-JCTagListView.modulemap"; path = "../Pods-JCTagListView_Tests-JCTagListView/Pods-JCTagListView_Tests-JCTagListView.modulemap"; sourceTree = "<group>"; };
-		E080C9F2A6FD1D8AC35DD666 /* Pods-JCTagListView_Tests-JCTagListView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-JCTagListView_Tests-JCTagListView-prefix.pch"; path = "../Pods-JCTagListView_Tests-JCTagListView/Pods-JCTagListView_Tests-JCTagListView-prefix.pch"; sourceTree = "<group>"; };
-		E3D29F524920B442DC6CF171 /* Pods-JCTagListView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCTagListView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E4EA0D47A03C684CCD96FD54 /* Pods_JCTagListView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCTagListView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F09EB51D7283ED1C972D50BD /* Pods-JCTagListView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCTagListView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F94A8677A05BD19B7908B626 /* Pods-JCTagListView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JCTagListView_Tests.modulemap"; sourceTree = "<group>"; };
+		1398D079BF12AABCF0FAACA4 /* JCTagListView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCTagListView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		142840879303129FB2572342 /* Pods-JCTagListView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JCTagListView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		155482427EE9C7AE88DD86A4 /* Pods-JCTagListView_Example-JCTagListView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCTagListView_Example-JCTagListView.xcconfig"; sourceTree = "<group>"; };
+		1E06C88D8AFF731CFB8E6143 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		284D3F004FEDD5FC81843E1E /* Pods-JCTagListView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCTagListView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2859C5FB122BB9052C6B108C /* Pods-JCTagListView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCTagListView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		300D157DB9B1776DDF97A7A1 /* JCCollectionViewTagFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JCCollectionViewTagFlowLayout.h; sourceTree = "<group>"; };
+		38770CD94A7BFC713E339E46 /* Pods-JCTagListView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCTagListView_Tests-dummy.m"; sourceTree = "<group>"; };
+		3A0915E88C2830B21A8E478D /* JCTagListView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCTagListView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		418863EF66F94AA5159D6916 /* Pods-JCTagListView_Tests-JCTagListView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCTagListView_Tests-JCTagListView.xcconfig"; path = "../Pods-JCTagListView_Tests-JCTagListView/Pods-JCTagListView_Tests-JCTagListView.xcconfig"; sourceTree = "<group>"; };
+		4428A124D47E042DE7902AF9 /* Pods-JCTagListView_Tests-JCTagListView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-JCTagListView_Tests-JCTagListView-dummy.m"; path = "../Pods-JCTagListView_Tests-JCTagListView/Pods-JCTagListView_Tests-JCTagListView-dummy.m"; sourceTree = "<group>"; };
+		473C1B1F0E1154BAAD60701A /* Pods-JCTagListView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCTagListView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		498E927AEF259599EE2668C0 /* libPods-JCTagListView_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCTagListView_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5277689E1BBAA3202ED62BB9 /* Pods-JCTagListView_Example-JCTagListView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCTagListView_Example-JCTagListView-prefix.pch"; sourceTree = "<group>"; };
+		53E0D4DE66C8731B318AC3C0 /* Pods-JCTagListView_Tests-JCTagListView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-JCTagListView_Tests-JCTagListView-prefix.pch"; path = "../Pods-JCTagListView_Tests-JCTagListView/Pods-JCTagListView_Tests-JCTagListView-prefix.pch"; sourceTree = "<group>"; };
+		594449FEE352A11B72CEE741 /* libPods-JCTagListView_Example-JCTagListView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCTagListView_Example-JCTagListView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D2D7AA2DF7E86954C8685A /* libPods-JCTagListView_Tests-JCTagListView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCTagListView_Tests-JCTagListView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A6CE805154068C0D324901 /* Pods-JCTagListView_Example-JCTagListView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCTagListView_Example-JCTagListView-Private.xcconfig"; sourceTree = "<group>"; };
+		845F6A39535646C0AC9AF855 /* Pods-JCTagListView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JCTagListView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		89DF6CC6C567256D86F58719 /* libPods-JCTagListView_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCTagListView_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AB54B3CEF03DD03AB55DDC4 /* Pods-JCTagListView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCTagListView_Example-dummy.m"; sourceTree = "<group>"; };
+		92409CC8D8155E7193550F6D /* Pods-JCTagListView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCTagListView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		990D087CCA043E7E10E1B87D /* Pods-JCTagListView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCTagListView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9AC125EA135A435D1BC67EBC /* JCTagCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JCTagCell.h; sourceTree = "<group>"; };
+		9E6D1FDA04F7A294BC4C5B67 /* JCTagCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JCTagCell.m; sourceTree = "<group>"; };
+		9E83C91326EF62DCCF76675E /* JCTagListView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JCTagListView.m; sourceTree = "<group>"; };
+		AC64077BEF0F96D1F59B3D02 /* Pods-JCTagListView_Tests-JCTagListView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCTagListView_Tests-JCTagListView-Private.xcconfig"; path = "../Pods-JCTagListView_Tests-JCTagListView/Pods-JCTagListView_Tests-JCTagListView-Private.xcconfig"; sourceTree = "<group>"; };
+		ADA0BE22060FECA7430555DE /* JCCollectionViewTagFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JCCollectionViewTagFlowLayout.m; sourceTree = "<group>"; };
+		B0F692E618D470C32A8D85EC /* Pods-JCTagListView_Example-JCTagListView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCTagListView_Example-JCTagListView-dummy.m"; sourceTree = "<group>"; };
+		BF182346B2405AD20F58A552 /* Pods-JCTagListView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCTagListView_Example-resources.sh"; sourceTree = "<group>"; };
+		CEA2364E2ED04A656066E07E /* Pods-JCTagListView_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCTagListView_Example-environment.h"; sourceTree = "<group>"; };
+		D01444603A9D9CEE9C2D3630 /* Pods-JCTagListView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCTagListView_Tests-resources.sh"; sourceTree = "<group>"; };
+		E8EAB5BEA081DEA2EC059AAA /* JCTagListView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JCTagListView.h; sourceTree = "<group>"; };
+		EEC874ED4A68F7C9D8FDAE2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EFA2FBD9760B6DD185C45665 /* Pods-JCTagListView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCTagListView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF9C84A476921D413B47C4C9 /* Pods-JCTagListView_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCTagListView_Tests-environment.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2329BDA668D4C42342063F0A /* Frameworks */ = {
+		0C5B6EBFE81D2E2010030BE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42DB3F510167B124E78EC14B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11359CAFBC49D6909CC8B800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71ECB2B3EC30F3162BFBFAB6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12CF991CCF975A5BCC450285 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A2120621E80274B293C7593 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				635B4A693360B0E4E5512C6D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		451AD522EC528E2CE005E046 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CD2053D5833B5DF0270B61FC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6AD6732C0E79482981DB7BC7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1C8156AFEE1420E4D710D8B0 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BC5301E617E97AA353A97D5C /* Frameworks */ = {
+		5480C9366FC7249F7EB80FFC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9AF8E913E84CA1CE306053A /* Frameworks */ = {
+		CF8EE01174ACBDE37525DF49 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42B58F0077E2BDAE6544830C /* Foundation.framework in Frameworks */,
+				03834F2CAEE9517991846C16 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4474772BFBABD4D6564E66E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19F2DE8A6A7963128E25A93 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		077EDD5B81EAE3F5404E65B2 /* Pods-JCTagListView_Example */ = {
+		0A235EF8BD9898A2EFC02818 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				98974E0282D8DE1A7EF17FE6 /* Info.plist */,
-				CEC3DC4C57A8D58FA5B30993 /* Pods-JCTagListView_Example.modulemap */,
-				20FF45EAFD51216362689DAF /* Pods-JCTagListView_Example-acknowledgements.markdown */,
-				29333850DD87C8C0B3D3CFE1 /* Pods-JCTagListView_Example-acknowledgements.plist */,
-				8E68111FE13AA29CC8A11C4E /* Pods-JCTagListView_Example-dummy.m */,
-				ABEB7E04CF632153447FBA67 /* Pods-JCTagListView_Example-environment.h */,
-				F09EB51D7283ED1C972D50BD /* Pods-JCTagListView_Example-frameworks.sh */,
-				555FE46F61B6E2A44E253339 /* Pods-JCTagListView_Example-resources.sh */,
-				C7BEC3742B836B5D3506A4B3 /* Pods-JCTagListView_Example-umbrella.h */,
-				18EAADDFC8A7F991E8CD1C7B /* Pods-JCTagListView_Example.debug.xcconfig */,
-				05481C1D4BFFA3E50B4CB620 /* Pods-JCTagListView_Example.release.xcconfig */,
-			);
-			name = "Pods-JCTagListView_Example";
-			path = "Target Support Files/Pods-JCTagListView_Example";
-			sourceTree = "<group>";
-		};
-		172D2CD8805989D01216E381 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				B9C4BEDD510B404C148419C5 /* JCCollectionViewTagFlowLayout.h */,
-				3E0C76408C40968F03CDDD9D /* JCCollectionViewTagFlowLayout.m */,
-				71F7E49D66700854D350624B /* JCTagCell.h */,
-				8D17265FF17036550AE0DFC4 /* JCTagCell.m */,
-				66D3070795E04A1644C5A148 /* JCTagListView.h */,
-				3E3280D6BB1FDD1EA98784A1 /* JCTagListView.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		17D9BDC991E3848907553082 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6CBA1C7D0835CF310788F4AE /* JCTagListView */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		50531A7CCA88AEA4F420BB95 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				077EDD5B81EAE3F5404E65B2 /* Pods-JCTagListView_Example */,
-				5A1064D901D662B3A49E9A6C /* Pods-JCTagListView_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		5A1064D901D662B3A49E9A6C /* Pods-JCTagListView_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				CC5F04F0661C1F274D381E5B /* Info.plist */,
-				F94A8677A05BD19B7908B626 /* Pods-JCTagListView_Tests.modulemap */,
-				8B282CA5ADDCC70967F6717D /* Pods-JCTagListView_Tests-acknowledgements.markdown */,
-				5FF02798F39ADAA430A283E7 /* Pods-JCTagListView_Tests-acknowledgements.plist */,
-				5810E7844EA9DBB5ED2FFB56 /* Pods-JCTagListView_Tests-dummy.m */,
-				4D0C0269D3F5C769593B8FBD /* Pods-JCTagListView_Tests-environment.h */,
-				659B1320FB92D96EF1DEFB14 /* Pods-JCTagListView_Tests-frameworks.sh */,
-				6ECFC26C2318FE9024C4B4C1 /* Pods-JCTagListView_Tests-resources.sh */,
-				3F6D422C9FB0A2B63AE1BB9C /* Pods-JCTagListView_Tests-umbrella.h */,
-				78CC82FB5139C067321F720A /* Pods-JCTagListView_Tests.debug.xcconfig */,
-				E3D29F524920B442DC6CF171 /* Pods-JCTagListView_Tests.release.xcconfig */,
-			);
-			name = "Pods-JCTagListView_Tests";
-			path = "Target Support Files/Pods-JCTagListView_Tests";
-			sourceTree = "<group>";
-		};
-		6C601A6A1A1204D83FC6DEFE = {
-			isa = PBXGroup;
-			children = (
-				709503BB5BE791FB630A22A0 /* Podfile */,
-				17D9BDC991E3848907553082 /* Development Pods */,
-				97176AB594587214C5CA0A44 /* Frameworks */,
-				DBF915C2ABD31E9E2565C754 /* Products */,
-				50531A7CCA88AEA4F420BB95 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		6CBA1C7D0835CF310788F4AE /* JCTagListView */ = {
-			isa = PBXGroup;
-			children = (
-				D1ADA7ED0EFF4558DFBED2D0 /* Pod */,
-				DE4713023FCB40B38BF20954 /* Support Files */,
-			);
-			name = JCTagListView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		754F0B4C6FAF945081CB1C88 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				388CFAE847E9B2DC368F35C4 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		97176AB594587214C5CA0A44 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				754F0B4C6FAF945081CB1C88 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D1ADA7ED0EFF4558DFBED2D0 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				172D2CD8805989D01216E381 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		DBF915C2ABD31E9E2565C754 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5F0FC1D7E5EC553E025D65ED /* JCTagListView.bundle */,
-				BCFC991228F5B00D2F4187F7 /* JCTagListView.bundle */,
-				B6E3A5012AD4D80E9F6BA5A6 /* JCTagListView.framework */,
-				D971015CF760DBCC6AC20616 /* JCTagListView.framework */,
-				E4EA0D47A03C684CCD96FD54 /* Pods_JCTagListView_Example.framework */,
-				9209D4EF1B5E664EDE6ADEF7 /* Pods_JCTagListView_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		DE4713023FCB40B38BF20954 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2C63F39D2B7B2A0BB93A9A26 /* Info.plist */,
-				98A02B97E9517F18EA9ECB69 /* Info.plist */,
-				A50E78524E87A337A8BC5F7A /* Pods-JCTagListView_Example-JCTagListView.modulemap */,
-				CC580C3F399F1DD6D9FD101C /* Pods-JCTagListView_Example-JCTagListView.xcconfig */,
-				6094D2C7F37692673EF7BB52 /* Pods-JCTagListView_Example-JCTagListView-Private.xcconfig */,
-				24F145C31BA4BCA8F1F13EAA /* Pods-JCTagListView_Example-JCTagListView-dummy.m */,
-				CF1391DD787BE7DF46AEE544 /* Pods-JCTagListView_Example-JCTagListView-prefix.pch */,
-				B338E9815AB2DBDF5475F501 /* Pods-JCTagListView_Example-JCTagListView-umbrella.h */,
-				DC03270DEE3D12ED0E16AAEC /* Pods-JCTagListView_Tests-JCTagListView.modulemap */,
-				3650B53F95A669819E8F4934 /* Pods-JCTagListView_Tests-JCTagListView.xcconfig */,
-				A07BAC3124F6FB6CDA83A30C /* Pods-JCTagListView_Tests-JCTagListView-Private.xcconfig */,
-				7898190EFF67567046680DF2 /* Pods-JCTagListView_Tests-JCTagListView-dummy.m */,
-				E080C9F2A6FD1D8AC35DD666 /* Pods-JCTagListView_Tests-JCTagListView-prefix.pch */,
-				24FD63C1369905262F72C2A0 /* Pods-JCTagListView_Tests-JCTagListView-umbrella.h */,
+				155482427EE9C7AE88DD86A4 /* Pods-JCTagListView_Example-JCTagListView.xcconfig */,
+				69A6CE805154068C0D324901 /* Pods-JCTagListView_Example-JCTagListView-Private.xcconfig */,
+				B0F692E618D470C32A8D85EC /* Pods-JCTagListView_Example-JCTagListView-dummy.m */,
+				5277689E1BBAA3202ED62BB9 /* Pods-JCTagListView_Example-JCTagListView-prefix.pch */,
+				418863EF66F94AA5159D6916 /* Pods-JCTagListView_Tests-JCTagListView.xcconfig */,
+				AC64077BEF0F96D1F59B3D02 /* Pods-JCTagListView_Tests-JCTagListView-Private.xcconfig */,
+				4428A124D47E042DE7902AF9 /* Pods-JCTagListView_Tests-JCTagListView-dummy.m */,
+				53E0D4DE66C8731B318AC3C0 /* Pods-JCTagListView_Tests-JCTagListView-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Pods-JCTagListView_Example-JCTagListView";
 			sourceTree = "<group>";
 		};
+		0FA9C91BF235152F9578A35F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAD8DFBB018E2831FFBAA9F4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2028A00F5565F9C5C41FCE9F /* Pods-JCTagListView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				284D3F004FEDD5FC81843E1E /* Pods-JCTagListView_Example-acknowledgements.markdown */,
+				142840879303129FB2572342 /* Pods-JCTagListView_Example-acknowledgements.plist */,
+				8AB54B3CEF03DD03AB55DDC4 /* Pods-JCTagListView_Example-dummy.m */,
+				CEA2364E2ED04A656066E07E /* Pods-JCTagListView_Example-environment.h */,
+				BF182346B2405AD20F58A552 /* Pods-JCTagListView_Example-resources.sh */,
+				473C1B1F0E1154BAAD60701A /* Pods-JCTagListView_Example.debug.xcconfig */,
+				2859C5FB122BB9052C6B108C /* Pods-JCTagListView_Example.release.xcconfig */,
+			);
+			name = "Pods-JCTagListView_Example";
+			path = "Target Support Files/Pods-JCTagListView_Example";
+			sourceTree = "<group>";
+		};
+		5C908582F26836E9E35870A1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				300D157DB9B1776DDF97A7A1 /* JCCollectionViewTagFlowLayout.h */,
+				ADA0BE22060FECA7430555DE /* JCCollectionViewTagFlowLayout.m */,
+				9AC125EA135A435D1BC67EBC /* JCTagCell.h */,
+				9E6D1FDA04F7A294BC4C5B67 /* JCTagCell.m */,
+				E8EAB5BEA081DEA2EC059AAA /* JCTagListView.h */,
+				9E83C91326EF62DCCF76675E /* JCTagListView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		69D5A4A641B899AA5D7994F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A0915E88C2830B21A8E478D /* JCTagListView.bundle */,
+				1398D079BF12AABCF0FAACA4 /* JCTagListView.bundle */,
+				89DF6CC6C567256D86F58719 /* libPods-JCTagListView_Example.a */,
+				594449FEE352A11B72CEE741 /* libPods-JCTagListView_Example-JCTagListView.a */,
+				498E927AEF259599EE2668C0 /* libPods-JCTagListView_Tests.a */,
+				64D2D7AA2DF7E86954C8685A /* libPods-JCTagListView_Tests-JCTagListView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FCFFB979EBB58D6614EE492 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2028A00F5565F9C5C41FCE9F /* Pods-JCTagListView_Example */,
+				C072D931187516632A99B0A5 /* Pods-JCTagListView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C072D931187516632A99B0A5 /* Pods-JCTagListView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				990D087CCA043E7E10E1B87D /* Pods-JCTagListView_Tests-acknowledgements.markdown */,
+				845F6A39535646C0AC9AF855 /* Pods-JCTagListView_Tests-acknowledgements.plist */,
+				38770CD94A7BFC713E339E46 /* Pods-JCTagListView_Tests-dummy.m */,
+				FF9C84A476921D413B47C4C9 /* Pods-JCTagListView_Tests-environment.h */,
+				D01444603A9D9CEE9C2D3630 /* Pods-JCTagListView_Tests-resources.sh */,
+				EFA2FBD9760B6DD185C45665 /* Pods-JCTagListView_Tests.debug.xcconfig */,
+				92409CC8D8155E7193550F6D /* Pods-JCTagListView_Tests.release.xcconfig */,
+			);
+			name = "Pods-JCTagListView_Tests";
+			path = "Target Support Files/Pods-JCTagListView_Tests";
+			sourceTree = "<group>";
+		};
+		CAD8DFBB018E2831FFBAA9F4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1E06C88D8AFF731CFB8E6143 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D2EA7F21A15B5ED9014D39C7 /* JCTagListView */ = {
+			isa = PBXGroup;
+			children = (
+				DAB0F4B7300B3E4319A8B44A /* Pod */,
+				0A235EF8BD9898A2EFC02818 /* Support Files */,
+			);
+			name = JCTagListView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		D7A9094C5632C7DF4FF35A0D = {
+			isa = PBXGroup;
+			children = (
+				EEC874ED4A68F7C9D8FDAE2F /* Podfile */,
+				F14AAF706E0DDBD272E0AA82 /* Development Pods */,
+				0FA9C91BF235152F9578A35F /* Frameworks */,
+				69D5A4A641B899AA5D7994F8 /* Products */,
+				7FCFFB979EBB58D6614EE492 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DAB0F4B7300B3E4319A8B44A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				5C908582F26836E9E35870A1 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		F14AAF706E0DDBD272E0AA82 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2EA7F21A15B5ED9014D39C7 /* JCTagListView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		66C811FC522A5174E760A277 /* Headers */ = {
+		4176287857DFDC262AA257E4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9CC29885E92CCA8D4E8C2C0 /* JCCollectionViewTagFlowLayout.h in Headers */,
-				C28DBE98587D51DC70BA0199 /* JCTagCell.h in Headers */,
-				815CFBE6212B47D605293800 /* JCTagListView.h in Headers */,
-				70061A61BE111AAFBAC32D7D /* Pods-JCTagListView_Example-JCTagListView-umbrella.h in Headers */,
+				CCF9F21B9291145B2D4568D5 /* JCCollectionViewTagFlowLayout.h in Headers */,
+				76FEAD0B8B4D0382227E79E2 /* JCTagCell.h in Headers */,
+				41C36370A41973FF685BB313 /* JCTagListView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B3500D7F93F51E5FEE78666 /* Headers */ = {
+		ED0EF6F202B1996EBA8A65E0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4B4857426F23C7F21069FB9 /* JCCollectionViewTagFlowLayout.h in Headers */,
-				33825CDCC67407598E280529 /* JCTagCell.h in Headers */,
-				F800E019FFFC2E48146346A2 /* JCTagListView.h in Headers */,
-				87ECBC10EEF6B2A55DE606D8 /* Pods-JCTagListView_Tests-JCTagListView-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B6691B98EFA5AA08629EBA9B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				957DF186A27BAF02A6E15126 /* Pods-JCTagListView_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F171228C8380435E3BD2F3F4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1EF7E372CB5A1A1B3C90277D /* Pods-JCTagListView_Example-umbrella.h in Headers */,
+				8FE71A3DA4286359780228D5 /* JCCollectionViewTagFlowLayout.h in Headers */,
+				20F4467A7FC5DCF8D5D7A733 /* JCTagCell.h in Headers */,
+				11E83009EAC568189B7866BB /* JCTagListView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		069C4C854F34E9E98E60F4D7 /* Pods-JCTagListView_Example */ = {
+		017800187066493BE02AC934 /* Pods-JCTagListView_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0BB41F9812EA386DDE747B39 /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Example" */;
+			buildConfigurationList = 2C16A7614592ED574724B812 /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Tests" */;
 			buildPhases = (
-				2F22F68EFFD7332D46149913 /* Sources */,
-				6AD6732C0E79482981DB7BC7 /* Frameworks */,
-				F171228C8380435E3BD2F3F4 /* Headers */,
+				4DF5479127D7BDB5FF71836B /* Sources */,
+				0C5B6EBFE81D2E2010030BE4 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FA52F877F9D2F95D493DE3AA /* PBXTargetDependency */,
-			);
-			name = "Pods-JCTagListView_Example";
-			productName = "Pods-JCTagListView_Example";
-			productReference = E4EA0D47A03C684CCD96FD54 /* Pods_JCTagListView_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		14C28405DA39D52AC19DEC7E /* Pods-JCTagListView_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BE3E1B42737E17030251C76C /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Tests" */;
-			buildPhases = (
-				DCF580B378F50B251293FA27 /* Sources */,
-				2A2120621E80274B293C7593 /* Frameworks */,
-				B6691B98EFA5AA08629EBA9B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2834F5A2EFA94CFD246F5E99 /* PBXTargetDependency */,
+				3E15029132213DF2472F04AF /* PBXTargetDependency */,
 			);
 			name = "Pods-JCTagListView_Tests";
 			productName = "Pods-JCTagListView_Tests";
-			productReference = 9209D4EF1B5E664EDE6ADEF7 /* Pods_JCTagListView_Tests.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 498E927AEF259599EE2668C0 /* libPods-JCTagListView_Tests.a */;
+			productType = "com.apple.product-type.library.static";
 		};
-		19A3A626D2E81A6151CA8FB3 /* Pods-JCTagListView_Example-JCTagListView-JCTagListView */ = {
+		1AD953D62E05454D8C4D267B /* Pods-JCTagListView_Example-JCTagListView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1ECE0D14E607E4CD2E845CE /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Example-JCTagListView-JCTagListView" */;
+			buildConfigurationList = A1ABE7B3BE6714A07AFBB294 /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Example-JCTagListView" */;
 			buildPhases = (
-				90918CDFC1CE3A48C598559E /* Sources */,
-				2329BDA668D4C42342063F0A /* Frameworks */,
-				AEDED44669ADD61F643EC8BD /* Resources */,
+				3BF43A79509C6739BAFBB921 /* Sources */,
+				CF8EE01174ACBDE37525DF49 /* Frameworks */,
+				ED0EF6F202B1996EBA8A65E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9147F978275630E58B8D4D0D /* PBXTargetDependency */,
+			);
+			name = "Pods-JCTagListView_Example-JCTagListView";
+			productName = "Pods-JCTagListView_Example-JCTagListView";
+			productReference = 594449FEE352A11B72CEE741 /* libPods-JCTagListView_Example-JCTagListView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		75DDA7A69AD65E5200E39014 /* Pods-JCTagListView_Example-JCTagListView-JCTagListView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CC7311E79652F035D5C66A8 /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Example-JCTagListView-JCTagListView" */;
+			buildPhases = (
+				FCEC2C4D2EF2ED3C00B4C292 /* Sources */,
+				5480C9366FC7249F7EB80FFC /* Frameworks */,
+				466A3AD0D7AF48CFB6225938 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -411,16 +358,16 @@
 			);
 			name = "Pods-JCTagListView_Example-JCTagListView-JCTagListView";
 			productName = "Pods-JCTagListView_Example-JCTagListView-JCTagListView";
-			productReference = BCFC991228F5B00D2F4187F7 /* JCTagListView.bundle */;
+			productReference = 1398D079BF12AABCF0FAACA4 /* JCTagListView.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		98B3E7549E955D2A4D5DD86F /* Pods-JCTagListView_Tests-JCTagListView-JCTagListView */ = {
+		7EAEC99530EC673FE5F584D7 /* Pods-JCTagListView_Tests-JCTagListView-JCTagListView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C0C24BAE6727C58E626AFA8F /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Tests-JCTagListView-JCTagListView" */;
+			buildConfigurationList = 7EFA0FF6B49FEEA80562D592 /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Tests-JCTagListView-JCTagListView" */;
 			buildPhases = (
-				502B4AA9B3539A6C1F1A290A /* Sources */,
-				BC5301E617E97AA353A97D5C /* Frameworks */,
-				1E822BA5899420E59769FD37 /* Resources */,
+				8566E2BAB772255F6EAA1DE8 /* Sources */,
+				12CF991CCF975A5BCC450285 /* Frameworks */,
+				6D6CCA8CFCE5526916242A45 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -428,102 +375,83 @@
 			);
 			name = "Pods-JCTagListView_Tests-JCTagListView-JCTagListView";
 			productName = "Pods-JCTagListView_Tests-JCTagListView-JCTagListView";
-			productReference = 5F0FC1D7E5EC553E025D65ED /* JCTagListView.bundle */;
+			productReference = 3A0915E88C2830B21A8E478D /* JCTagListView.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		9C7F82101946DA7AF7188266 /* Pods-JCTagListView_Example-JCTagListView */ = {
+		9A913CE8AF3E0C2B52379DBE /* Pods-JCTagListView_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5509CC8BD8DEDA0158F746B8 /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Example-JCTagListView" */;
+			buildConfigurationList = D82E22B5052579FB74A873AF /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Example" */;
 			buildPhases = (
-				739F53EE5E214888052DBC6D /* Sources */,
-				D9AF8E913E84CA1CE306053A /* Frameworks */,
-				0615F5E217F68CC572D4BCB6 /* Resources */,
-				66C811FC522A5174E760A277 /* Headers */,
+				D1D25B0415473F3093779724 /* Sources */,
+				F4474772BFBABD4D6564E66E /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				39611C0749083F96D5E6377E /* PBXTargetDependency */,
+				91EAC2BB5398E03DA26C1522 /* PBXTargetDependency */,
 			);
-			name = "Pods-JCTagListView_Example-JCTagListView";
-			productName = "Pods-JCTagListView_Example-JCTagListView";
-			productReference = B6E3A5012AD4D80E9F6BA5A6 /* JCTagListView.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "Pods-JCTagListView_Example";
+			productName = "Pods-JCTagListView_Example";
+			productReference = 89DF6CC6C567256D86F58719 /* libPods-JCTagListView_Example.a */;
+			productType = "com.apple.product-type.library.static";
 		};
-		FDA0CD0E5AFEBC9A0A8C5D54 /* Pods-JCTagListView_Tests-JCTagListView */ = {
+		D73E59555402DDD7FB698C80 /* Pods-JCTagListView_Tests-JCTagListView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1136EACD977B463D414FDF72 /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Tests-JCTagListView" */;
+			buildConfigurationList = 4DF5BED81D778A7BEBEB0505 /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Tests-JCTagListView" */;
 			buildPhases = (
-				9D1454E74FBB9BEB808D0B42 /* Sources */,
-				451AD522EC528E2CE005E046 /* Frameworks */,
-				011FE8E51421997DD6989486 /* Resources */,
-				9B3500D7F93F51E5FEE78666 /* Headers */,
+				1C083C36F81B14F226AF0078 /* Sources */,
+				11359CAFBC49D6909CC8B800 /* Frameworks */,
+				4176287857DFDC262AA257E4 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2596FA7D0E4607A48F71239F /* PBXTargetDependency */,
+				FABBEE890CF385BCF57AF29B /* PBXTargetDependency */,
 			);
 			name = "Pods-JCTagListView_Tests-JCTagListView";
 			productName = "Pods-JCTagListView_Tests-JCTagListView";
-			productReference = D971015CF760DBCC6AC20616 /* JCTagListView.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 64D2D7AA2DF7E86954C8685A /* libPods-JCTagListView_Tests-JCTagListView.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2B382477772017B92927CD8C /* Project object */ = {
+		29764A37F253033B9D39A2E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 07D1486AB5D6A9129AE661F1 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 46C09EE3AD5F2FC5C4B0E60F /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 6C601A6A1A1204D83FC6DEFE;
-			productRefGroup = DBF915C2ABD31E9E2565C754 /* Products */;
+			mainGroup = D7A9094C5632C7DF4FF35A0D;
+			productRefGroup = 69D5A4A641B899AA5D7994F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				069C4C854F34E9E98E60F4D7 /* Pods-JCTagListView_Example */,
-				9C7F82101946DA7AF7188266 /* Pods-JCTagListView_Example-JCTagListView */,
-				19A3A626D2E81A6151CA8FB3 /* Pods-JCTagListView_Example-JCTagListView-JCTagListView */,
-				14C28405DA39D52AC19DEC7E /* Pods-JCTagListView_Tests */,
-				FDA0CD0E5AFEBC9A0A8C5D54 /* Pods-JCTagListView_Tests-JCTagListView */,
-				98B3E7549E955D2A4D5DD86F /* Pods-JCTagListView_Tests-JCTagListView-JCTagListView */,
+				9A913CE8AF3E0C2B52379DBE /* Pods-JCTagListView_Example */,
+				1AD953D62E05454D8C4D267B /* Pods-JCTagListView_Example-JCTagListView */,
+				75DDA7A69AD65E5200E39014 /* Pods-JCTagListView_Example-JCTagListView-JCTagListView */,
+				017800187066493BE02AC934 /* Pods-JCTagListView_Tests */,
+				D73E59555402DDD7FB698C80 /* Pods-JCTagListView_Tests-JCTagListView */,
+				7EAEC99530EC673FE5F584D7 /* Pods-JCTagListView_Tests-JCTagListView-JCTagListView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		011FE8E51421997DD6989486 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BF519E5333AF4D3EC80A33A1 /* JCTagListView.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0615F5E217F68CC572D4BCB6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				02CF6405162A3DB219BD635E /* JCTagListView.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1E822BA5899420E59769FD37 /* Resources */ = {
+		466A3AD0D7AF48CFB6225938 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEDED44669ADD61F643EC8BD /* Resources */ = {
+		6D6CCA8CFCE5526916242A45 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -533,176 +461,239 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2F22F68EFFD7332D46149913 /* Sources */ = {
+		1C083C36F81B14F226AF0078 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9BE64E2BBBACC8D8A502AAA /* Pods-JCTagListView_Example-dummy.m in Sources */,
+				C31F2227E5672063AB4C2072 /* JCCollectionViewTagFlowLayout.m in Sources */,
+				71A72DE20AA6BF5ABD1CF867 /* JCTagCell.m in Sources */,
+				31312143877CBA670B090FEB /* JCTagListView.m in Sources */,
+				7A8B847C288968FF346C2619 /* Pods-JCTagListView_Tests-JCTagListView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		502B4AA9B3539A6C1F1A290A /* Sources */ = {
+		3BF43A79509C6739BAFBB921 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51EBF14BF2C4195AB1BF1204 /* JCCollectionViewTagFlowLayout.m in Sources */,
+				4E09F5FCC47165C3C86C305D /* JCTagCell.m in Sources */,
+				01F0AFFB175FDCE8516580C7 /* JCTagListView.m in Sources */,
+				62BD4096A693EF29CFF5D29A /* Pods-JCTagListView_Example-JCTagListView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF5479127D7BDB5FF71836B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D708BAA825D3A9D84E3A2B3 /* Pods-JCTagListView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8566E2BAB772255F6EAA1DE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		739F53EE5E214888052DBC6D /* Sources */ = {
+		D1D25B0415473F3093779724 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A91D29193CDB6FBC33873B6 /* JCCollectionViewTagFlowLayout.m in Sources */,
-				BDD64C141AE2D3885077B3C1 /* JCTagCell.m in Sources */,
-				DD058736CA1B0276AF1AA5F1 /* JCTagListView.m in Sources */,
-				BE5531D485A599B54A7FAAE2 /* Pods-JCTagListView_Example-JCTagListView-dummy.m in Sources */,
+				A909A5BE5DB840F29FCD00C5 /* Pods-JCTagListView_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		90918CDFC1CE3A48C598559E /* Sources */ = {
+		FCEC2C4D2EF2ED3C00B4C292 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9D1454E74FBB9BEB808D0B42 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5901149A0F434D78CBF2D36D /* JCCollectionViewTagFlowLayout.m in Sources */,
-				EF1BD36B7D91F7C3E802C0C0 /* JCTagCell.m in Sources */,
-				ED23D6B4561A2CFEB9F8DD32 /* JCTagListView.m in Sources */,
-				DC09D44C00F60247AABDDB34 /* Pods-JCTagListView_Tests-JCTagListView-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DCF580B378F50B251293FA27 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A1997D8E40E59879D149920 /* Pods-JCTagListView_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2596FA7D0E4607A48F71239F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-JCTagListView_Tests-JCTagListView-JCTagListView";
-			target = 98B3E7549E955D2A4D5DD86F /* Pods-JCTagListView_Tests-JCTagListView-JCTagListView */;
-			targetProxy = 62230A952BAA164588AB9E1E /* PBXContainerItemProxy */;
-		};
-		2834F5A2EFA94CFD246F5E99 /* PBXTargetDependency */ = {
+		3E15029132213DF2472F04AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-JCTagListView_Tests-JCTagListView";
-			target = FDA0CD0E5AFEBC9A0A8C5D54 /* Pods-JCTagListView_Tests-JCTagListView */;
-			targetProxy = 75B23E0CAFE1BEFD918A5906 /* PBXContainerItemProxy */;
+			target = D73E59555402DDD7FB698C80 /* Pods-JCTagListView_Tests-JCTagListView */;
+			targetProxy = 77F33F89F900B5FAD1706B5C /* PBXContainerItemProxy */;
 		};
-		39611C0749083F96D5E6377E /* PBXTargetDependency */ = {
+		9147F978275630E58B8D4D0D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-JCTagListView_Example-JCTagListView-JCTagListView";
-			target = 19A3A626D2E81A6151CA8FB3 /* Pods-JCTagListView_Example-JCTagListView-JCTagListView */;
-			targetProxy = 558744CBF51241D87F038F4E /* PBXContainerItemProxy */;
+			target = 75DDA7A69AD65E5200E39014 /* Pods-JCTagListView_Example-JCTagListView-JCTagListView */;
+			targetProxy = 9E965E3450DB0E31BAEE1115 /* PBXContainerItemProxy */;
 		};
-		FA52F877F9D2F95D493DE3AA /* PBXTargetDependency */ = {
+		91EAC2BB5398E03DA26C1522 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-JCTagListView_Example-JCTagListView";
-			target = 9C7F82101946DA7AF7188266 /* Pods-JCTagListView_Example-JCTagListView */;
-			targetProxy = 1C56D479400630E28D531673 /* PBXContainerItemProxy */;
+			target = 1AD953D62E05454D8C4D267B /* Pods-JCTagListView_Example-JCTagListView */;
+			targetProxy = 1496C4F055ED0DBDD933BB01 /* PBXContainerItemProxy */;
+		};
+		FABBEE890CF385BCF57AF29B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JCTagListView_Tests-JCTagListView-JCTagListView";
+			target = 7EAEC99530EC673FE5F584D7 /* Pods-JCTagListView_Tests-JCTagListView-JCTagListView */;
+			targetProxy = 516153AF73C71A2213B4F5B0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		126AE34AF9F3566E51BEF984 /* Debug */ = {
+		253279F0BFE5096B8C8F35BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18EAADDFC8A7F991E8CD1C7B /* Pods-JCTagListView_Example.debug.xcconfig */;
+			baseConfigurationReference = 69A6CE805154068C0D324901 /* Pods-JCTagListView_Example-JCTagListView-Private.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-JCTagListView_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCTagListView_Example-JCTagListView/Pods-JCTagListView_Example-JCTagListView-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-JCTagListView_Example/Pods-JCTagListView_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_JCTagListView_Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		193D27CDAA55B85DC2E1FC3C /* Debug */ = {
+		2EE44ADB86397289B4EB03EF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78CC82FB5139C067321F720A /* Pods-JCTagListView_Tests.debug.xcconfig */;
+			baseConfigurationReference = 69A6CE805154068C0D324901 /* Pods-JCTagListView_Example-JCTagListView-Private.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-JCTagListView_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-JCTagListView_Tests/Pods-JCTagListView_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_JCTagListView_Tests;
+				PRODUCT_NAME = JCTagListView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		39152D5C0E522BA280FD188E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E26540260A894E6DDA8E17B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC64077BEF0F96D1F59B3D02 /* Pods-JCTagListView_Tests-JCTagListView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JCTagListView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
-		2AA548C64A61810530028785 /* Release */ = {
+		68FEEA31486DAC4F1169AB16 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3D29F524920B442DC6CF171 /* Pods-JCTagListView_Tests.release.xcconfig */;
+			baseConfigurationReference = AC64077BEF0F96D1F59B3D02 /* Pods-JCTagListView_Tests-JCTagListView-Private.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-JCTagListView_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				PRODUCT_NAME = JCTagListView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6AD5D79D1CEEECFA324E31D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92409CC8D8155E7193550F6D /* Pods-JCTagListView_Tests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-JCTagListView_Tests/Pods-JCTagListView_Tests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_JCTagListView_Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		2F12AEFBA632EEA4ED900FC9 /* Debug */ = {
+		7825F80664175ECA1713B644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69A6CE805154068C0D324901 /* Pods-JCTagListView_Example-JCTagListView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCTagListView_Example-JCTagListView/Pods-JCTagListView_Example-JCTagListView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7DDFDAE1128C66AD36878D58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2859C5FB122BB9052C6B108C /* Pods-JCTagListView_Example.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9C581F27B5E3FCFD3A1FFCE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFA2FBD9760B6DD185C45665 /* Pods-JCTagListView_Tests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A5BB75467628392E7F892ADB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -741,296 +732,133 @@
 			};
 			name = Debug;
 		};
-		3A0955FF848B4CA7C3E9B81B /* Debug */ = {
+		BD97649F5690F9ED3DAD643C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6094D2C7F37692673EF7BB52 /* Pods-JCTagListView_Example-JCTagListView-Private.xcconfig */;
+			baseConfigurationReference = 473C1B1F0E1154BAAD60701A /* Pods-JCTagListView_Example.debug.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-JCTagListView_Example";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = JCTagListView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		454B95FF234448679F3F723D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6094D2C7F37692673EF7BB52 /* Pods-JCTagListView_Example-JCTagListView-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCTagListView_Example-JCTagListView/Pods-JCTagListView_Example-JCTagListView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-JCTagListView_Example-JCTagListView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-JCTagListView_Example-JCTagListView/Pods-JCTagListView_Example-JCTagListView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = JCTagListView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		539D5D8B54566850BEF0D82D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A07BAC3124F6FB6CDA83A30C /* Pods-JCTagListView_Tests-JCTagListView-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-JCTagListView_Tests";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = JCTagListView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		576CF92272CE0D730128B47D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A07BAC3124F6FB6CDA83A30C /* Pods-JCTagListView_Tests-JCTagListView-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-JCTagListView_Tests";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = JCTagListView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		5A34B31032C1FAA50300A47D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05481C1D4BFFA3E50B4CB620 /* Pods-JCTagListView_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-JCTagListView_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-JCTagListView_Example/Pods-JCTagListView_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_JCTagListView_Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF6F98BE40BE74C30A5CA34C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC64077BEF0F96D1F59B3D02 /* Pods-JCTagListView_Tests-JCTagListView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCTagListView_Tests-JCTagListView/Pods-JCTagListView_Tests-JCTagListView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		8E7579B74648293547334462 /* Release */ = {
+		DE6E0D536025AA56089AB155 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6094D2C7F37692673EF7BB52 /* Pods-JCTagListView_Example-JCTagListView-Private.xcconfig */;
+			baseConfigurationReference = 69A6CE805154068C0D324901 /* Pods-JCTagListView_Example-JCTagListView-Private.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-JCTagListView_Example";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = JCTagListView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
-		};
-		A9172F5EFEF047EF90E98080 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A07BAC3124F6FB6CDA83A30C /* Pods-JCTagListView_Tests-JCTagListView-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCTagListView_Tests-JCTagListView/Pods-JCTagListView_Tests-JCTagListView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-JCTagListView_Tests-JCTagListView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-JCTagListView_Tests-JCTagListView/Pods-JCTagListView_Tests-JCTagListView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = JCTagListView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CAF38B0BDC6D051D09EF8E79 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A07BAC3124F6FB6CDA83A30C /* Pods-JCTagListView_Tests-JCTagListView-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCTagListView_Tests-JCTagListView/Pods-JCTagListView_Tests-JCTagListView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-JCTagListView_Tests-JCTagListView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-JCTagListView_Tests-JCTagListView/Pods-JCTagListView_Tests-JCTagListView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = JCTagListView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
 			name = Debug;
 		};
-		D0A76268021844F64365E263 /* Release */ = {
+		F256BD6422119780AA194A27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC64077BEF0F96D1F59B3D02 /* Pods-JCTagListView_Tests-JCTagListView-Private.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		FE4450007F2577F27B248E18 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6094D2C7F37692673EF7BB52 /* Pods-JCTagListView_Example-JCTagListView-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCTagListView_Example-JCTagListView/Pods-JCTagListView_Example-JCTagListView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-JCTagListView_Example-JCTagListView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCTagListView_Tests-JCTagListView/Pods-JCTagListView_Tests-JCTagListView-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-JCTagListView_Example-JCTagListView/Pods-JCTagListView_Example-JCTagListView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = JCTagListView;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07D1486AB5D6A9129AE661F1 /* Build configuration list for PBXProject "Pods" */ = {
+		2C16A7614592ED574724B812 /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F12AEFBA632EEA4ED900FC9 /* Debug */,
-				D0A76268021844F64365E263 /* Release */,
+				9C581F27B5E3FCFD3A1FFCE3 /* Debug */,
+				6AD5D79D1CEEECFA324E31D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0BB41F9812EA386DDE747B39 /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Example" */ = {
+		3CC7311E79652F035D5C66A8 /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Example-JCTagListView-JCTagListView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				126AE34AF9F3566E51BEF984 /* Debug */,
-				5A34B31032C1FAA50300A47D /* Release */,
+				DE6E0D536025AA56089AB155 /* Debug */,
+				2EE44ADB86397289B4EB03EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1136EACD977B463D414FDF72 /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Tests-JCTagListView" */ = {
+		46C09EE3AD5F2FC5C4B0E60F /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CAF38B0BDC6D051D09EF8E79 /* Debug */,
-				A9172F5EFEF047EF90E98080 /* Release */,
+				A5BB75467628392E7F892ADB /* Debug */,
+				39152D5C0E522BA280FD188E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5509CC8BD8DEDA0158F746B8 /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Example-JCTagListView" */ = {
+		4DF5BED81D778A7BEBEB0505 /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Tests-JCTagListView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				454B95FF234448679F3F723D /* Debug */,
-				FE4450007F2577F27B248E18 /* Release */,
+				F256BD6422119780AA194A27 /* Debug */,
+				BF6F98BE40BE74C30A5CA34C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1ECE0D14E607E4CD2E845CE /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Example-JCTagListView-JCTagListView" */ = {
+		7EFA0FF6B49FEEA80562D592 /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Tests-JCTagListView-JCTagListView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A0955FF848B4CA7C3E9B81B /* Debug */,
-				8E7579B74648293547334462 /* Release */,
+				5E26540260A894E6DDA8E17B /* Debug */,
+				68FEEA31486DAC4F1169AB16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BE3E1B42737E17030251C76C /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Tests" */ = {
+		A1ABE7B3BE6714A07AFBB294 /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Example-JCTagListView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				193D27CDAA55B85DC2E1FC3C /* Debug */,
-				2AA548C64A61810530028785 /* Release */,
+				253279F0BFE5096B8C8F35BB /* Debug */,
+				7825F80664175ECA1713B644 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C0C24BAE6727C58E626AFA8F /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Tests-JCTagListView-JCTagListView" */ = {
+		D82E22B5052579FB74A873AF /* Build configuration list for PBXNativeTarget "Pods-JCTagListView_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				539D5D8B54566850BEF0D82D /* Debug */,
-				576CF92272CE0D730128B47D /* Release */,
+				BD97649F5690F9ED3DAD643C /* Debug */,
+				7DDFDAE1128C66AD36878D58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2B382477772017B92927CD8C /* Project object */;
+	rootObject = 29764A37F253033B9D39A2E3 /* Project object */;
 }

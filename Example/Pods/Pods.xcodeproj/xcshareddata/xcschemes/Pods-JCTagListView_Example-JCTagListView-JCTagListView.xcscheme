@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "19A3A626D2E81A6151CA8FB3"
+               BlueprintIdentifier = "75DDA7A69AD65E5200E39014"
                BuildableName = "JCTagListView.bundle"
                BlueprintName = "Pods-JCTagListView_Example-JCTagListView-JCTagListView"
                ReferencedContainer = "container:Pods.xcodeproj">
