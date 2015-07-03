@@ -89,17 +89,19 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    JCTagCell *cell = (JCTagCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    
-    if ([_seletedTags containsObject:self.tags[indexPath.item]]) {
-        cell.backgroundColor = [UIColor whiteColor];
+    if (self.canRemoveTags) {
+        JCTagCell *cell = (JCTagCell *)[collectionView cellForItemAtIndexPath:indexPath];
         
-        [_seletedTags removeObject:self.tags[indexPath.item]];
-    }
-    else {
-        cell.backgroundColor = [UIColor colorWithRed:217/255.0f green:217/255.0f blue:217/255.0f alpha:1];
-    
-        [_seletedTags addObject:self.tags[indexPath.item]];
+        if ([_seletedTags containsObject:self.tags[indexPath.item]]) {
+            cell.backgroundColor = [UIColor whiteColor];
+            
+            [_seletedTags removeObject:self.tags[indexPath.item]];
+        }
+        else {
+            cell.backgroundColor = [UIColor colorWithRed:217/255.0f green:217/255.0f blue:217/255.0f alpha:1];
+            
+            [_seletedTags addObject:self.tags[indexPath.item]];
+        }
     }
 }
 

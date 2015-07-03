@@ -10,6 +10,8 @@
 
 @interface JCTagListView : UIView
 
+@property (nonatomic, assign) BOOL canRemoveTags;
+
 @property (nonatomic, strong) NSMutableArray *tags;
 @property (nonatomic, strong, readonly) NSMutableArray *seletedTags;
 
