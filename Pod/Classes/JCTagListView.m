@@ -12,6 +12,8 @@
 
 @interface JCTagListView ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
+@property (nonatomic, copy) JCTagListViewBlock seletedBlock;
+
 @end
 
 @implementation JCTagListView
@@ -61,6 +63,11 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     [self addSubview:self.collectionView];
 }
 
+- (void)setCompletionBlockWithSeleted:(JCTagListViewBlock)completionBlock
+{
+    self.seletedBlock = completionBlock;
+}
+
 #pragma mark - UICollectionViewDelegate | UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -89,7 +96,7 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (self.canRemoveTags) {
+    if (self.canSeletedTags) {
         JCTagCell *cell = (JCTagCell *)[collectionView cellForItemAtIndexPath:indexPath];
         
         if ([_seletedTags containsObject:self.tags[indexPath.item]]) {
@@ -102,6 +109,10 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
             
             [_seletedTags addObject:self.tags[indexPath.item]];
         }
+    }
+    
+    if (self.seletedBlock) {
+        self.seletedBlock(indexPath.item);
     }
 }
 

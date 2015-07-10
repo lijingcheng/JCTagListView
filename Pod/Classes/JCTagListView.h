@@ -8,13 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^JCTagListViewBlock)(NSInteger index);
+
 @interface JCTagListView : UIView
 
-@property (nonatomic, assign) BOOL canRemoveTags;
+@property (nonatomic, assign) BOOL canSeletedTags;
 
 @property (nonatomic, strong) NSMutableArray *tags;
 @property (nonatomic, strong, readonly) NSMutableArray *seletedTags;
 
 @property (nonatomic, strong) UICollectionView *collectionView;
+
+- (void)setCompletionBlockWithSeleted:(JCTagListViewBlock)completionBlock;
 
 @end

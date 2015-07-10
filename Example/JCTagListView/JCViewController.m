@@ -21,9 +21,13 @@
 {
     [super viewDidLoad];
     
-    self.tagListView.canRemoveTags = YES;
+    self.tagListView.canSeletedTags = YES;
     
     [self.tagListView.tags addObjectsFromArray:@[@"NSString", @"NSMutableString", @"NSArray", @"UIAlertView", @"UITapGestureRecognizer", @"IBOutlet", @"IBAction", @"id", @"UIView", @"UIStatusBar", @"UITableViewController", @"UIStepper", @"UISegmentedControl", @"UICollectionViewController", @"UISearchBar", @"UIToolbar", @"UIPageControl", @"UIActionSheet", @"NSMutableArray", @"NSDictionary", @"NSMutableDictionary", @"NSSet", @"NSMutableSet", @"NSData", @"NSMutableData", @"NSDate", @"NSCalendar", @"UIButton", @"UILabel", @"UITextField", @"UITextView", @"UIImageView", @"UITableView", @"UICollectionView", @"UIViewController"]];
+    
+    [self.tagListView setCompletionBlockWithSeleted:^(NSInteger index) {
+        NSLog(@"______%ld______", (long)index);
+    }];
 }
 
 #pragma mark - IBAction
