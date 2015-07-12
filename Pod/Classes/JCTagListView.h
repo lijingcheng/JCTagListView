@@ -7,18 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JCTagCell.h"
 
 typedef void (^JCTagListViewBlock)(NSInteger index);
 
 @interface JCTagListView : UIView
 
-@property (nonatomic, assign) BOOL canSeletedTags;
+@property (nonatomic, assign) BOOL canSelectedTags;
 
 @property (nonatomic, strong) NSMutableArray *tags;
-@property (nonatomic, strong, readonly) NSMutableArray *seletedTags;
+@property (nonatomic, strong, readonly) NSMutableArray *selectedTags;
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 
-- (void)setCompletionBlockWithSeleted:(JCTagListViewBlock)completionBlock;
-
+- (void)setCompletionBlockWithSelected:(JCTagListViewBlock)completionBlock;
+- (void) handleCellSelection:(JCTagCell*)cell indexPathOfCell:(NSIndexPath *)indexPath;
 @end
