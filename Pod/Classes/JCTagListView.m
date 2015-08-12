@@ -51,6 +51,9 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     
     self.tags = [NSMutableArray array];
     
+    self.tagColor = [UIColor darkGrayColor];
+    self.tagCornerRadius = 10.0f;
+    
     JCCollectionViewTagFlowLayout *layout = [[JCCollectionViewTagFlowLayout alloc] init];
     
     self.collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:layout];
@@ -89,7 +92,10 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
 {
     JCTagCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     cell.backgroundColor = [UIColor whiteColor];
-    cell.title = self.tags[indexPath.item];
+    cell.layer.borderColor = self.tagColor.CGColor;
+    cell.layer.cornerRadius = self.tagCornerRadius;
+    cell.titleLabel.text = self.tags[indexPath.item];
+    cell.titleLabel.textColor = self.tagColor;
     
     return cell;
 }

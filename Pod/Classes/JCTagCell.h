@@ -10,6 +10,6 @@
 
 @interface JCTagCell : UICollectionViewCell
 
-@property (nonatomic, copy) NSString *title;
+@property (nonatomic, strong) UILabel *titleLabel;
 
 @end

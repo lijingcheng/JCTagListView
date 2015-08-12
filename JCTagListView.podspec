@@ -9,8 +9,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "JCTagListView"
-  s.version          = "0.0.3"
-  s.summary          = "Support delete tags."
+  s.version          = "0.0.4"
+  s.summary          = "Support delete tags and settings tags color."
   s.homepage         = "http://lijingcheng.github.io/"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
