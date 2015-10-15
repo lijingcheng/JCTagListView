@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tXg-JF-3Hi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tXg-JF-3Hi">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -12,6 +12,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="U5Y-Jy-mcc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <connections>
                         <segue destination="whP-gf-Uak" kind="relationship" relationship="rootViewController" id="LTY-Yc-OXT"/>
@@ -29,10 +30,24 @@
                         <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
                         <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1" customClass="JCTagListView">
+                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNz-gg-734" customClass="JCTagListView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="UNz-gg-734" secondAttribute="bottom" id="KeM-3L-LHZ"/>
+                            <constraint firstAttribute="trailing" secondItem="UNz-gg-734" secondAttribute="trailing" id="cic-xm-XXX"/>
+                            <constraint firstItem="UNz-gg-734" firstAttribute="top" secondItem="TpU-gO-2f1" secondAttribute="top" id="cl4-gn-cyJ"/>
+                            <constraint firstItem="UNz-gg-734" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="zvD-iB-gB3"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="JCTagListView" id="cMv-9O-1me">
                         <barButtonItem key="rightBarButtonItem" image="delete" id="GSW-Id-tuZ">
@@ -42,7 +57,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="tagListView" destination="TpU-gO-2f1" id="U3r-YN-sxO"/>
+                        <outlet property="tagListView" destination="UNz-gg-734" id="81B-2x-LV8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -51,6 +66,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="delete" width="64" height="64"/>
+        <image name="delete" width="24" height="24"/>
     </resources>
 </document>
