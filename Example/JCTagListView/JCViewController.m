@@ -22,10 +22,11 @@
     [super viewDidLoad];
     
     self.tagListView.canSelectTags = YES;
-    self.tagListView.tagStrokeColor = [UIColor redColor]; //(Optional)
+    self.tagListView.tagStrokeColor = [UIColor darkGrayColor]; //(Optional)
     self.tagListView.tagBackgroundColor = [UIColor whiteColor]; //(Optional)
-    self.tagListView.tagTextColor = [UIColor redColor]; //(Optional)
-    self.tagListView.tagColor = [UIColor darkGrayColor];
+    self.tagListView.tagTextColor = [UIColor darkGrayColor]; //(Optional)
+    // Previous method:
+    // self.tagListView.tagColor = [UIColor darkGrayColor];
     self.tagListView.tagCornerRadius = 5.0f;
     
     [self.tagListView.tags addObjectsFromArray:@[@"NSString", @"NSMutableString", @"NSArray", @"UIAlertView", @"UITapGestureRecognizer", @"IBOutlet", @"IBAction", @"id", @"UIView", @"UIStatusBar", @"UITableViewController", @"UIStepper", @"UISegmentedControl", @"UICollectionViewController", @"UISearchBar", @"UIToolbar", @"UIPageControl", @"UIActionSheet", @"NSMutableArray", @"NSDictionary", @"NSMutableDictionary", @"NSSet", @"NSMutableSet", @"NSData", @"NSMutableData", @"NSDate", @"NSCalendar", @"UIButton", @"UILabel", @"UITextField", @"UITextView", @"UIImageView", @"UITableView", @"UICollectionView", @"UIViewController"]];
