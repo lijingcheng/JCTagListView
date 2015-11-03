@@ -12,7 +12,9 @@ typedef void (^JCTagListViewBlock)(NSInteger index);
 
 @interface JCTagListView : UIView
 
-@property (nonatomic, strong) UIColor *tagColor;
+@property (nonatomic, strong) UIColor *tagStrokeColor;
+@property (nonatomic, strong) UIColor *tagTextColor;
+@property (nonatomic, strong) UIColor *tagBackgroundColor;
 @property (nonatomic, assign) CGFloat tagCornerRadius;
 
 @property (nonatomic, assign) BOOL canSeletedTags;
