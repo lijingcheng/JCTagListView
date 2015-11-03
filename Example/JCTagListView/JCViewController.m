@@ -22,9 +22,9 @@
     [super viewDidLoad];
     
     self.tagListView.canSelectTags = YES;
-    self.tagView.tagStrokeColor = [UIColor redColor]; //(Optional)
-    self.tagView.tagBackgroundColor = [UIColor whiteColor]; //(Optional)
-    self.tagView.tagTextColor = [UIColor redColor]; //(Optional)
+    self.tagListView.tagStrokeColor = [UIColor redColor]; //(Optional)
+    self.tagListView.tagBackgroundColor = [UIColor whiteColor]; //(Optional)
+    self.tagListView.tagTextColor = [UIColor redColor]; //(Optional)
     self.tagListView.tagColor = [UIColor darkGrayColor];
     self.tagListView.tagCornerRadius = 5.0f;
     
