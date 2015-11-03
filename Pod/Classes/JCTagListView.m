@@ -152,7 +152,7 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (self.canSeletedTags) {
+    if (self.canSelectTags) {
         JCTagCell *cell = (JCTagCell *)[collectionView cellForItemAtIndexPath:indexPath];
         
         if ([_seletedTags containsObject:self.tags[indexPath.item]]) {

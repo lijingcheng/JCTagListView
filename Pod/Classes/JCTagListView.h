@@ -17,7 +17,7 @@ typedef void (^JCTagListViewBlock)(NSInteger index);
 @property (nonatomic, strong) UIColor *tagBackgroundColor;
 @property (nonatomic, assign) CGFloat tagCornerRadius;
 
-@property (nonatomic, assign) BOOL canSeletedTags;
+@property (nonatomic, assign) BOOL canSelectTags;
 
 @property (nonatomic, strong) NSMutableArray *tags;
 @property (nonatomic, strong, readonly) NSMutableArray *seletedTags;
