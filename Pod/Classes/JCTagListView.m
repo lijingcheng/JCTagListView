@@ -20,6 +20,56 @@
 
 static NSString * const reuseIdentifier = @"tagListViewItemId";
 
+@synthesize tagStrokeColor = _tagStrokeColor;
+
+-(void)setTextColor:(UIColor *)tagStrokeColor
+{
+    _tagStrokeColor = tagStrokeColor;
+}
+
+-(UIColor *) tagStrokeColor
+{
+    if(_tagStrokeColor){
+        return _tagStrokeColor;
+    }else{
+        return [UIColor lightGrayColor];
+    }
+}
+
+
+@synthesize tagTextColor = _tagTextColor;
+
+-(void)setTagTextColor:(UIColor *)tagTextColor
+{
+    _tagTextColor = tagTextColor;
+}
+
+-(UIColor *) tagTextColor
+{
+    if(_tagTextColor){
+        return _tagTextColor;
+    }else{
+        return [UIColor whiteColor];
+    }
+}
+
+@synthesize tagBackgroundColor = _tagBackgroundColor;
+
+
+-(void)setTagBackgroundColor:(UIColor *)tagBackgroundColor
+{
+    _tagBackgroundColor = tagBackgroundColor;
+}
+
+-(UIColor *) tagBackgroundColor
+{
+    if(_tagBackgroundColor){
+        return _tagBackgroundColor;
+    }else{
+        return [UIColor clearColor];
+    }
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
@@ -51,7 +101,7 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     
     self.tags = [NSMutableArray array];
     
-    self.tagColor = [UIColor darkGrayColor];
+    self.tagStrokeColor = [UIColor darkGrayColor];
     self.tagCornerRadius = 10.0f;
     
     JCCollectionViewTagFlowLayout *layout = [[JCCollectionViewTagFlowLayout alloc] init];
@@ -61,7 +111,7 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     self.collectionView.dataSource = self;
     self.collectionView.showsHorizontalScrollIndicator = NO;
     self.collectionView.showsVerticalScrollIndicator = NO;
-    self.collectionView.backgroundColor = [UIColor whiteColor];
+    self.collectionView.backgroundColor = [UIColor clearColor];
     [self.collectionView registerClass:[JCTagCell class] forCellWithReuseIdentifier:reuseIdentifier];
     [self addSubview:self.collectionView];
 }
@@ -91,22 +141,22 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     JCTagCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor whiteColor];
-    cell.layer.borderColor = self.tagColor.CGColor;
+    cell.backgroundColor = self.tagBackgroundColor;
+    cell.layer.borderColor = self.tagStrokeColor.CGColor;
     cell.layer.cornerRadius = self.tagCornerRadius;
     cell.titleLabel.text = self.tags[indexPath.item];
-    cell.titleLabel.textColor = self.tagColor;
+    cell.titleLabel.textColor = self.tagTextColor;
     
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (self.canSeletedTags) {
+    if (self.canSelectTags) {
         JCTagCell *cell = (JCTagCell *)[collectionView cellForItemAtIndexPath:indexPath];
         
         if ([_seletedTags containsObject:self.tags[indexPath.item]]) {
-            cell.backgroundColor = [UIColor whiteColor];
+            cell.backgroundColor = [UIColor clearColor];
             
             [_seletedTags removeObject:self.tags[indexPath.item]];
         }
