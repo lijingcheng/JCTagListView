@@ -50,7 +50,7 @@
     self.minimumLineSpacing = 10.0f;
     self.sectionInset = UIEdgeInsetsMake(10.0f, 10.0f, 10.0f, 10.0f);
     
-    self.itemAttributes = [[NSMutableArray alloc] initWithCapacity:10];
+    _itemAttributes = [NSMutableArray array];
 }
 
 #pragma mark -
@@ -122,11 +122,10 @@
 - (CGSize)itemSizeForIndexPath:(NSIndexPath *)indexPath
 {
     if ([self.delegate respondsToSelector:@selector(collectionView:layout:sizeForItemAtIndexPath:)]) {
-        return [self.delegate collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
+        self.itemSize = [self.delegate collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
     }
-    else {
-        return self.itemSize;
-    }
+   
+    return self.itemSize;
 }
 
 @end

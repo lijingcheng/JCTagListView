@@ -12,7 +12,7 @@
 
 @interface JCTagListView ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
-@property (nonatomic, copy) JCTagListViewBlock seletedBlock;
+@property (nonatomic, copy) JCTagListViewBlock selectedBlock;
 
 @end
 
@@ -47,28 +47,31 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
 
 - (void)setup
 {
-    _seletedTags = [NSMutableArray array];
+    _selectedTags = [NSMutableArray array];
+    _tags = [NSMutableArray array];
     
-    self.tags = [NSMutableArray array];
+    _tagStrokeColor = [UIColor lightGrayColor];
+    _tagBackgroundColor = [UIColor clearColor];
+    _tagTextColor = [UIColor darkGrayColor];
+    _tagSelectedBackgroundColor = [UIColor colorWithRed:217/255.0f green:217/255.0f blue:217/255.0f alpha:1];
     
-    self.tagColor = [UIColor darkGrayColor];
-    self.tagCornerRadius = 10.0f;
+    _tagCornerRadius = 10.0f;
     
     JCCollectionViewTagFlowLayout *layout = [[JCCollectionViewTagFlowLayout alloc] init];
     
-    self.collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:layout];
-    self.collectionView.delegate = self;
-    self.collectionView.dataSource = self;
-    self.collectionView.showsHorizontalScrollIndicator = NO;
-    self.collectionView.showsVerticalScrollIndicator = NO;
-    self.collectionView.backgroundColor = [UIColor whiteColor];
-    [self.collectionView registerClass:[JCTagCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    [self addSubview:self.collectionView];
+    _collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:layout];
+    _collectionView.delegate = self;
+    _collectionView.dataSource = self;
+    _collectionView.showsHorizontalScrollIndicator = NO;
+    _collectionView.showsVerticalScrollIndicator = NO;
+    _collectionView.backgroundColor = [UIColor clearColor];
+    [_collectionView registerClass:[JCTagCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    [self addSubview:_collectionView];
 }
 
-- (void)setCompletionBlockWithSeleted:(JCTagListViewBlock)completionBlock
+- (void)setCompletionBlockWithSelected:(JCTagListViewBlock)completionBlock
 {
-    self.seletedBlock = completionBlock;
+    self.selectedBlock = completionBlock;
 }
 
 #pragma mark - UICollectionViewDelegate | UICollectionViewDataSource
@@ -91,34 +94,38 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     JCTagCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor whiteColor];
-    cell.layer.borderColor = self.tagColor.CGColor;
+    cell.backgroundColor = self.tagBackgroundColor;
+    cell.layer.borderColor = self.tagStrokeColor.CGColor;
     cell.layer.cornerRadius = self.tagCornerRadius;
     cell.titleLabel.text = self.tags[indexPath.item];
-    cell.titleLabel.textColor = self.tagColor;
+    cell.titleLabel.textColor = self.tagTextColor;
+    
+    if ([self.selectedTags containsObject:self.tags[indexPath.item]]) {
+        cell.backgroundColor = self.tagSelectedBackgroundColor;
+    }
     
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (self.canSeletedTags) {
+    if (self.canSelectTags) {
         JCTagCell *cell = (JCTagCell *)[collectionView cellForItemAtIndexPath:indexPath];
         
-        if ([_seletedTags containsObject:self.tags[indexPath.item]]) {
-            cell.backgroundColor = [UIColor whiteColor];
+        if ([self.selectedTags containsObject:self.tags[indexPath.item]]) {
+            cell.backgroundColor = self.tagBackgroundColor;
             
-            [_seletedTags removeObject:self.tags[indexPath.item]];
+            [self.selectedTags removeObject:self.tags[indexPath.item]];
         }
         else {
-            cell.backgroundColor = [UIColor colorWithRed:217/255.0f green:217/255.0f blue:217/255.0f alpha:1];
+            cell.backgroundColor = self.tagSelectedBackgroundColor;
             
-            [_seletedTags addObject:self.tags[indexPath.item]];
+            [self.selectedTags addObject:self.tags[indexPath.item]];
         }
     }
     
-    if (self.seletedBlock) {
-        self.seletedBlock(indexPath.item);
+    if (self.selectedBlock) {
+        self.selectedBlock(indexPath.item);
     }
 }
 

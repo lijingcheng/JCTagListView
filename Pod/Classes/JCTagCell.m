@@ -16,10 +16,10 @@
         self.layer.masksToBounds = YES;
         self.layer.borderWidth = 1.0f;
         
-        self.titleLabel = [[UILabel alloc] initWithFrame:self.bounds];
-        self.titleLabel.textAlignment = NSTextAlignmentCenter;
-        self.titleLabel.font = [UIFont systemFontOfSize:14.0f];
-        [self.contentView addSubview:self.titleLabel];
+        _titleLabel = [[UILabel alloc] initWithFrame:self.bounds];
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
+        _titleLabel.font = [UIFont systemFontOfSize:14.0f];
+        [self.contentView addSubview:_titleLabel];
     }
     
     return self;

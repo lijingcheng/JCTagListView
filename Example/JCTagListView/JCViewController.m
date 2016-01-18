@@ -21,13 +21,17 @@
 {
     [super viewDidLoad];
     
-    self.tagListView.canSeletedTags = YES;
-    self.tagListView.tagColor = [UIColor darkGrayColor];
+    self.tagListView.canSelectTags = YES;
+//    self.tagListView.tagStrokeColor = [UIColor redColor];
+//    self.tagListView.tagBackgroundColor = [UIColor orangeColor];
+//    self.tagListView.tagTextColor = [UIColor greenColor];
+//    self.tagListView.tagSelectedBackgroundColor = [UIColor yellowColor];
     self.tagListView.tagCornerRadius = 5.0f;
     
     [self.tagListView.tags addObjectsFromArray:@[@"NSString", @"NSMutableString", @"NSArray", @"UIAlertView", @"UITapGestureRecognizer", @"IBOutlet", @"IBAction", @"id", @"UIView", @"UIStatusBar", @"UITableViewController", @"UIStepper", @"UISegmentedControl", @"UICollectionViewController", @"UISearchBar", @"UIToolbar", @"UIPageControl", @"UIActionSheet", @"NSMutableArray", @"NSDictionary", @"NSMutableDictionary", @"NSSet", @"NSMutableSet", @"NSData", @"NSMutableData", @"NSDate", @"NSCalendar", @"UIButton", @"UILabel", @"UITextField", @"UITextView", @"UIImageView", @"UITableView", @"UICollectionView", @"UIViewController"]];
+    [self.tagListView.selectedTags addObjectsFromArray:@[@"UIStatusBar", @"UITableViewController", @"UIStepper", @"UISegmentedControl", @"UICollectionViewController", @"UISearchBar", @"UIToolbar", @"NSMutableData", @"NSDate", @"NSCalendar", @"UIButton", @"UILabel", @"UITextField", @"UITextView", @"UIImageView", @"UITableView", @"UICollectionView", @"UIViewController"]];
     
-    [self.tagListView setCompletionBlockWithSeleted:^(NSInteger index) {
+    [self.tagListView setCompletionBlockWithSelected:^(NSInteger index) {
         NSLog(@"______%ld______", (long)index);
     }];
 }
@@ -36,8 +40,8 @@
 
 - (IBAction)delete:(id)sender
 {
-    [self.tagListView.tags removeObjectsInArray:self.tagListView.seletedTags];
-    [self.tagListView.seletedTags removeAllObjects];
+    [self.tagListView.tags removeObjectsInArray:self.tagListView.selectedTags];
+    [self.tagListView.selectedTags removeAllObjects];
     
     [self.tagListView.collectionView reloadData];
 }
