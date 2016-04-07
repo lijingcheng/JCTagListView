@@ -112,8 +112,8 @@
 
 - (id<UICollectionViewDelegateFlowLayout>)delegate
 {
-    if (_delegate == nil) {
-        _delegate =  (id<UICollectionViewDelegateFlowLayout>)self.collectionView.delegate;
+    if (!_delegate) {
+        _delegate = (id<UICollectionViewDelegateFlowLayout>)self.collectionView.delegate;
     }
     
     return _delegate;
