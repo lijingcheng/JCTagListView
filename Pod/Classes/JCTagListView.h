@@ -21,7 +21,7 @@ typedef void (^JCTagListViewBlock)(NSInteger index);
 @property (nonatomic, assign) BOOL canSelectTags;// default: NO
 
 @property (nonatomic, strong) NSMutableArray *tags;
-@property (nonatomic, strong, readonly) NSMutableArray *selectedTags;
+@property (nonatomic, strong) NSMutableArray *selectedTags;
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 
