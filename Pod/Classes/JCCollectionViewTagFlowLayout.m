@@ -128,4 +128,33 @@
     return self.itemSize;
 }
 
+- (CGFloat)calculateContentHeight:(NSArray *)tags
+{
+    CGFloat contentHeight = self.sectionInset.top + self.itemSize.height;
+    
+    CGFloat originX = self.sectionInset.left;
+    CGFloat originY = self.sectionInset.top;
+    
+    for (NSInteger i = 0; i < tags.count; i++) {
+        CGSize maxSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - self.sectionInset.left - self.sectionInset.right, self.itemSize.height);
+        
+        CGRect frame = [tags[i] boundingRectWithSize:maxSize options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:14.0f]} context:nil];
+        
+        CGSize itemSize = CGSizeMake(frame.size.width + 20.0f, self.itemSize.height);
+        
+        if ((originX + itemSize.width + self.sectionInset.right/2) > [UIScreen mainScreen].bounds.size.width) {
+            originX = self.sectionInset.left;
+            originY += itemSize.height + self.minimumLineSpacing;
+            
+            contentHeight += itemSize.height + self.minimumLineSpacing;
+        }
+        
+        originX += itemSize.width + self.minimumInteritemSpacing;
+    }
+    
+    contentHeight += self.sectionInset.bottom;
+    
+    return contentHeight;
+}
+
 @end

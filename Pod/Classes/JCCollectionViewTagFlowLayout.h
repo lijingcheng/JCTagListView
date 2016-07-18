@@ -10,4 +10,6 @@
 
 @interface JCCollectionViewTagFlowLayout : UICollectionViewFlowLayout
 
+- (CGFloat)calculateContentHeight:(NSArray *)tags;
+
 @end

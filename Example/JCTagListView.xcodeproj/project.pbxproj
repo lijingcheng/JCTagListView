@@ -23,6 +23,8 @@
 		7D8F1BC1A8CB6A15727E3215 /* libPods-JCTagListView_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8200F925C0382BC1AFCC5937 /* libPods-JCTagListView_Tests.a */; };
 		8045718C51A6AEFCA61B6A0A /* libPods-JCTagListView_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 172ADC17AD2C20DA8DF003E7 /* libPods-JCTagListView_Example.a */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		F37F854F1D3CA94F00365348 /* JCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F37F854E1D3CA94F00365348 /* JCTableViewController.m */; };
+		F37F85521D3CA97000365348 /* JCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F37F85511D3CA97000365348 /* JCTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,10 @@
 		62AE6E6A39D7B32D65B93E59 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8200F925C0382BC1AFCC5937 /* libPods-JCTagListView_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCTagListView_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F37F854D1D3CA94F00365348 /* JCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCTableViewController.h; sourceTree = "<group>"; };
+		F37F854E1D3CA94F00365348 /* JCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCTableViewController.m; sourceTree = "<group>"; };
+		F37F85501D3CA97000365348 /* JCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCTableViewCell.h; sourceTree = "<group>"; };
+		F37F85511D3CA97000365348 /* JCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,10 @@
 				6003F59D195388D20070C39A /* JCAppDelegate.m */,
 				6003F5A5195388D20070C39A /* JCViewController.h */,
 				6003F5A6195388D20070C39A /* JCViewController.m */,
+				F37F854D1D3CA94F00365348 /* JCTableViewController.h */,
+				F37F854E1D3CA94F00365348 /* JCTableViewController.m */,
+				F37F85501D3CA97000365348 /* JCTableViewCell.h */,
+				F37F85511D3CA97000365348 /* JCTableViewCell.m */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for JCTagListView";
@@ -358,8 +368,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F37F85521D3CA97000365348 /* JCTableViewCell.m in Sources */,
 				6003F59E195388D20070C39A /* JCAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* JCViewController.m in Sources */,
+				F37F854F1D3CA94F00365348 /* JCTableViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

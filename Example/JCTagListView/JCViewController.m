@@ -8,6 +8,7 @@
 
 #import "JCViewController.h"
 #import "JCTagListView.h"
+#import "JCTableViewController.h"
 
 @interface JCViewController ()
 
@@ -44,6 +45,10 @@
     [self.tagListView.selectedTags removeAllObjects];
     
     [self.tagListView.collectionView reloadData];
+    
+    JCTableViewController *tableVC = [self.storyboard instantiateViewControllerWithIdentifier:@"JCTableViewController"];
+    
+    [self.navigationController pushViewController:tableVC animated:YES];
 }
 
 @end
