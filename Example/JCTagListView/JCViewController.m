@@ -27,6 +27,7 @@
 //    self.tagListView.tagBackgroundColor = [UIColor orangeColor];
 //    self.tagListView.tagTextColor = [UIColor greenColor];
 //    self.tagListView.tagSelectedBackgroundColor = [UIColor yellowColor];
+    self.tagListView.tagSelectedTextColor = [UIColor blackColor];
     self.tagListView.tagCornerRadius = 5.0f;
     
     [self.tagListView.tags addObjectsFromArray:@[@"NSString", @"NSMutableString", @"NSArray", @"UIAlertView", @"UITapGestureRecognizer", @"IBOutlet", @"IBAction", @"id", @"UIView", @"UIStatusBar", @"UITableViewController", @"UIStepper", @"UISegmentedControl", @"UICollectionViewController", @"UISearchBar", @"UIToolbar", @"UIPageControl", @"UIActionSheet", @"NSMutableArray", @"NSDictionary", @"NSMutableDictionary", @"NSSet", @"NSMutableSet", @"NSData", @"NSMutableData", @"NSDate", @"NSCalendar", @"UIButton", @"UILabel", @"UITextField", @"UITextView", @"UIImageView", @"UITableView", @"UICollectionView", @"UIViewController"]];
@@ -46,9 +47,10 @@
     
     [self.tagListView.collectionView reloadData];
     
-    JCTableViewController *tableVC = [self.storyboard instantiateViewControllerWithIdentifier:@"JCTableViewController"];
-    
-    [self.navigationController pushViewController:tableVC animated:YES];
+    // tags in cell
+//    JCTableViewController *tableVC = [self.storyboard instantiateViewControllerWithIdentifier:@"JCTableViewController"];
+//    
+//    [self.navigationController pushViewController:tableVC animated:YES];
 }
 
 @end
