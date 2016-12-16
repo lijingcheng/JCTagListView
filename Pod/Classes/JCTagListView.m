@@ -20,8 +20,7 @@
 
 static NSString * const reuseIdentifier = @"tagListViewItemId";
 
-- (id)initWithFrame:(CGRect)frame
-{
+- (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self setup];
     }
@@ -29,8 +28,7 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     return self;
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder
-{
+- (id)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
         [self setup];
     }
@@ -38,15 +36,13 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     return self;
 }
 
-- (void)layoutSubviews
-{
+- (void)layoutSubviews {
     [super layoutSubviews];
     
     self.collectionView.frame = self.bounds;
 }
 
-- (void)setup
-{
+- (void)setup {
     _selectedTags = [NSMutableArray array];
     _tags = [NSMutableArray array];
     
@@ -59,33 +55,20 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     
     _tagCornerRadius = 10.0f;
     
-    JCCollectionViewTagFlowLayout *layout = [[JCCollectionViewTagFlowLayout alloc] init];
-    
-    _collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:layout];
-    _collectionView.delegate = self;
-    _collectionView.dataSource = self;
-    _collectionView.scrollEnabled = NO;
-    _collectionView.showsHorizontalScrollIndicator = NO;
-    _collectionView.showsVerticalScrollIndicator = NO;
-    _collectionView.backgroundColor = [UIColor clearColor];
-    [_collectionView registerClass:[JCTagCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    [self addSubview:_collectionView];
+   [self addSubview:self.collectionView];
 }
 
-- (void)setCompletionBlockWithSelected:(JCTagListViewBlock)completionBlock
-{
+- (void)setCompletionBlockWithSelected:(JCTagListViewBlock)completionBlock {
     self.selectedBlock = completionBlock;
 }
 
 #pragma mark - UICollectionViewDelegate | UICollectionViewDataSource
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.tags.count;
 }
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     JCCollectionViewTagFlowLayout *layout = (JCCollectionViewTagFlowLayout *)collectionView.collectionViewLayout;
     CGSize maxSize = CGSizeMake(collectionView.frame.size.width - layout.sectionInset.left - layout.sectionInset.right, layout.itemSize.height);
     
@@ -94,8 +77,7 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     return CGSizeMake(frame.size.width + 20.0f, layout.itemSize.height);
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     JCTagCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     cell.backgroundColor = self.tagBackgroundColor;
     cell.layer.borderColor = self.tagStrokeColor.CGColor;
@@ -112,8 +94,7 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     return cell;
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     if (self.canSelectTags) {
         JCTagCell *cell = (JCTagCell *)[collectionView cellForItemAtIndexPath:indexPath];
         
@@ -134,6 +115,25 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     if (self.selectedBlock) {
         self.selectedBlock(indexPath.item);
     }
+}
+
+#pragma mark - setter/getter
+
+- (UICollectionView *)collectionView {
+    if (!_collectionView) {
+        JCCollectionViewTagFlowLayout *layout = [[JCCollectionViewTagFlowLayout alloc] init];
+        
+        _collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:layout];
+        _collectionView.delegate = self;
+        _collectionView.dataSource = self;
+        _collectionView.scrollEnabled = NO;
+        _collectionView.showsHorizontalScrollIndicator = NO;
+        _collectionView.showsVerticalScrollIndicator = NO;
+        _collectionView.backgroundColor = [UIColor clearColor];
+        [_collectionView registerClass:[JCTagCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    }
+    
+    return _collectionView;
 }
 
 @end

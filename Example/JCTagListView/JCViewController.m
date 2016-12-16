@@ -18,8 +18,7 @@
 
 @implementation JCViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     self.tagListView.canSelectTags = YES;
@@ -40,17 +39,17 @@
 
 #pragma mark - IBAction
 
-- (IBAction)delete:(id)sender
-{
+- (IBAction)delete:(id)sender {
     [self.tagListView.tags removeObjectsInArray:self.tagListView.selectedTags];
     [self.tagListView.selectedTags removeAllObjects];
     
     [self.tagListView.collectionView reloadData];
+}
+
+- (IBAction)openTableViewController:(id)sender {
+    JCTableViewController *tableVC = [self.storyboard instantiateViewControllerWithIdentifier:@"JCTableViewController"];
     
-    // tags in cell
-//    JCTableViewController *tableVC = [self.storyboard instantiateViewControllerWithIdentifier:@"JCTableViewController"];
-//    
-//    [self.navigationController pushViewController:tableVC animated:YES];
+    [self.navigationController pushViewController:tableVC animated:YES];
 }
 
 @end

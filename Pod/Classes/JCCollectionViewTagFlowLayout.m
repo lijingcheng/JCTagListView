@@ -20,30 +20,23 @@
 
 @implementation JCCollectionViewTagFlowLayout
 
-- (id)init
-{
-    self = [super init];
-    
-    if (self) {
+- (id)init {
+    if (self = [super init]) {
         [self setup];
     }
     
     return self;
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder
-{
-    self = [super initWithCoder:aDecoder];
-    
-    if (self) {
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
         [self setup];
     }
     
     return self;
 }
 
-- (void)setup
-{
+- (void)setup {
     self.itemSize = CGSizeMake(100.0f, 26.0f);
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.minimumInteritemSpacing = 10.0f;
@@ -55,8 +48,7 @@
 
 #pragma mark -
 
-- (void)prepareLayout
-{
+- (void)prepareLayout {
     [self.itemAttributes removeAllObjects];
     
     self.contentHeight = self.sectionInset.top + self.itemSize.height;
@@ -87,18 +79,15 @@
     self.contentHeight += self.sectionInset.bottom;
 }
 
-- (CGSize)collectionViewContentSize
-{
+- (CGSize)collectionViewContentSize {
     return CGSizeMake(self.collectionView.frame.size.width, self.contentHeight);
 }
 
-- (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
-{
+- (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
     return self.itemAttributes;
 }
 
-- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds
-{
+- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
     CGRect oldBounds = self.collectionView.bounds;
     
     if (CGRectGetWidth(newBounds) != CGRectGetWidth(oldBounds)) {
@@ -110,8 +99,7 @@
 
 #pragma mark -
 
-- (id<UICollectionViewDelegateFlowLayout>)delegate
-{
+- (id<UICollectionViewDelegateFlowLayout>)delegate {
     if (!_delegate) {
         _delegate = (id<UICollectionViewDelegateFlowLayout>)self.collectionView.delegate;
     }
@@ -119,8 +107,7 @@
     return _delegate;
 }
 
-- (CGSize)itemSizeForIndexPath:(NSIndexPath *)indexPath
-{
+- (CGSize)itemSizeForIndexPath:(NSIndexPath *)indexPath {
     if ([self.delegate respondsToSelector:@selector(collectionView:layout:sizeForItemAtIndexPath:)]) {
         self.itemSize = [self.delegate collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
     }
@@ -128,8 +115,7 @@
     return self.itemSize;
 }
 
-- (CGFloat)calculateContentHeight:(NSArray *)tags
-{
+- (CGFloat)calculateContentHeight:(NSArray *)tags {
     CGFloat contentHeight = self.sectionInset.top + self.itemSize.height;
     
     CGFloat originX = self.sectionInset.left;

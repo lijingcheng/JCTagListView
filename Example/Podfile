@@ -1,11 +1,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'JCTagListView_Example', :exclusive => true do
+platform :ios, "8.0"
+
+target 'JCTagListView_Example' do
   pod "JCTagListView", :path => "../"
 end
 
-target 'JCTagListView_Tests', :exclusive => true do
+target 'JCTagListView_Tests' do
   pod "JCTagListView", :path => "../"
-
-  
 end

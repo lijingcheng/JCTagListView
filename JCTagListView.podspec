@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "JCTagListView"
-  s.version          = "0.1.1"
+  s.version          = "1.0.0"
   s.summary          = "Support delete tags and settings tags color."
   s.homepage         = "http://lijingcheng.github.io/"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
@@ -17,10 +17,7 @@ Pod::Spec.new do |s|
   s.author           = { "lijingcheng" => "bj_lijingcheng@163.com" }
   s.source           = { :git => "https://github.com/lijingcheng/JCTagListView.git", :tag => s.version.to_s }
   s.social_media_url = 'http://weibo.com/lijingcheng1984'
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'JCTagListView' => ['Pod/Assets/*.png']
-  }
 end

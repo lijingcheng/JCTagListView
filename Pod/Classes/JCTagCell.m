@@ -10,33 +10,39 @@
 
 @implementation JCTagCell
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
+- (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         self.layer.masksToBounds = YES;
         self.layer.borderWidth = 1.0f;
-        
-        _titleLabel = [[UILabel alloc] initWithFrame:self.bounds];
-        _titleLabel.textAlignment = NSTextAlignmentCenter;
-        _titleLabel.font = [UIFont systemFontOfSize:14.0f];
-        [self.contentView addSubview:_titleLabel];
+
+        [self.contentView addSubview:self.titleLabel];
     }
     
     return self;
 }
 
-- (void)layoutSubviews
-{
+- (void)layoutSubviews {
     [super layoutSubviews];
     
     self.titleLabel.frame = self.bounds;
 }
 
-- (void)prepareForReuse
-{
+- (void)prepareForReuse {
     [super prepareForReuse];
     
     self.titleLabel.text = @"";
+}
+
+#pragma mark - setter/getter
+
+- (UILabel *)titleLabel {
+    if (!_titleLabel) {
+        _titleLabel = [[UILabel alloc] initWithFrame:self.bounds];
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
+        _titleLabel.font = [UIFont systemFontOfSize:14.0f];
+    }
+    
+    return _titleLabel;
 }
 
 @end

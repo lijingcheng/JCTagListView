@@ -10,18 +10,19 @@
 
 typedef void (^JCTagListViewBlock)(NSInteger index);
 
+IB_DESIGNABLE
 @interface JCTagListView : UIView
 
-@property (nonatomic, strong) UIColor *tagStrokeColor;// default: lightGrayColor
-@property (nonatomic, strong) UIColor *tagTextColor;// default: darkGrayColor
-@property (nonatomic, strong) UIColor *tagSelectedTextColor;// default: darkGrayColor
-@property (nonatomic, strong) UIColor *tagBackgroundColor;// default: clearColor
-@property (nonatomic, strong) UIColor *tagSelectedBackgroundColor;// default: rgb(217,217,217)
+@property (nonatomic, strong) IBInspectable UIColor *tagStrokeColor; // default: lightGrayColor
+@property (nonatomic, strong) IBInspectable UIColor *tagTextColor; // default: darkGrayColor
+@property (nonatomic, strong) IBInspectable UIColor *tagSelectedTextColor; // default: darkGrayColor
+@property (nonatomic, strong) IBInspectable UIColor *tagBackgroundColor; // default: clearColor
+@property (nonatomic, strong) IBInspectable UIColor *tagSelectedBackgroundColor; // default: rgb(217,217,217)
 
-@property (nonatomic, strong) UIFont *tagTextFont;// default: [UIFont systemFontOfSize:14.0f]
+@property (nonatomic, assign) IBInspectable BOOL canSelectTags; // default: NO
+@property (nonatomic, assign) IBInspectable CGFloat tagCornerRadius; // default: 10
 
-@property (nonatomic, assign) CGFloat tagCornerRadius;// default: 10
-@property (nonatomic, assign) BOOL canSelectTags;// default: NO
+@property (nonatomic, strong) UIFont *tagTextFont; // default: [UIFont systemFontOfSize:14.0f]
 
 @property (nonatomic, strong) NSMutableArray *tags;
 @property (nonatomic, strong) NSMutableArray *selectedTags;

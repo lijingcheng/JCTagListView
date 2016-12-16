@@ -16,8 +16,7 @@
 
 @implementation JCTableViewCell
 
-- (void)setTags:(NSArray *)tags
-{
+- (void)setTags:(NSArray *)tags {
     _tags = tags;
     
     self.tagListView.tags = [NSMutableArray arrayWithArray:tags];
