@@ -35,6 +35,8 @@
     [self.tagListView setCompletionBlockWithSelected:^(NSInteger index) {
         NSLog(@"______%ld______", (long)index);
     }];
+    
+    NSLog(@"\n\n🍀🍀🍀 The warnings in the console can be ignored, the actual use of lib will not exist. 🍀🍀🍀");
 }
 
 #pragma mark - IBAction

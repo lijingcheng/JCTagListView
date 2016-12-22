@@ -97,14 +97,13 @@
 		B300FCD0FC05E9BF57CD41FE /* Pods-JCTagListView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCTagListView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCTagListView_Example/Pods-JCTagListView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B8CB6F632F25551189645684 /* Pods-JCTagListView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCTagListView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCTagListView_Example/Pods-JCTagListView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F316C1F51E0BBFF4006375AE /* JCTagListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JCTagListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F316C1F71E0BBFF4006375AE /* JCTagListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCTagListView.h; sourceTree = "<group>"; };
 		F316C1F81E0BBFF4006375AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F316C2141E0BC077006375AE /* JCCollectionViewTagFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCCollectionViewTagFlowLayout.h; path = ../Pod/Classes/JCCollectionViewTagFlowLayout.h; sourceTree = "<group>"; };
-		F316C2151E0BC077006375AE /* JCTagCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCTagCell.h; path = ../Pod/Classes/JCTagCell.h; sourceTree = "<group>"; };
-		F316C2161E0BC077006375AE /* JCTagListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCTagListView.h; path = ../Pod/Classes/JCTagListView.h; sourceTree = "<group>"; };
-		F316C21A1E0BC085006375AE /* JCCollectionViewTagFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCCollectionViewTagFlowLayout.m; path = ../Pod/Classes/JCCollectionViewTagFlowLayout.m; sourceTree = "<group>"; };
-		F316C21B1E0BC085006375AE /* JCTagCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCTagCell.m; path = ../Pod/Classes/JCTagCell.m; sourceTree = "<group>"; };
-		F316C21C1E0BC085006375AE /* JCTagListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCTagListView.m; path = ../Pod/Classes/JCTagListView.m; sourceTree = "<group>"; };
+		F316C2141E0BC077006375AE /* JCCollectionViewTagFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCCollectionViewTagFlowLayout.h; path = ../../Pod/Classes/JCCollectionViewTagFlowLayout.h; sourceTree = "<group>"; };
+		F316C2151E0BC077006375AE /* JCTagCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCTagCell.h; path = ../../Pod/Classes/JCTagCell.h; sourceTree = "<group>"; };
+		F316C2161E0BC077006375AE /* JCTagListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCTagListView.h; path = ../../Pod/Classes/JCTagListView.h; sourceTree = "<group>"; };
+		F316C21A1E0BC085006375AE /* JCCollectionViewTagFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCCollectionViewTagFlowLayout.m; path = ../../Pod/Classes/JCCollectionViewTagFlowLayout.m; sourceTree = "<group>"; };
+		F316C21B1E0BC085006375AE /* JCTagCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCTagCell.m; path = ../../Pod/Classes/JCTagCell.m; sourceTree = "<group>"; };
+		F316C21C1E0BC085006375AE /* JCTagListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCTagListView.m; path = ../../Pod/Classes/JCTagListView.m; sourceTree = "<group>"; };
 		F37F854D1D3CA94F00365348 /* JCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCTableViewController.h; sourceTree = "<group>"; };
 		F37F854E1D3CA94F00365348 /* JCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCTableViewController.m; sourceTree = "<group>"; };
 		F37F85501D3CA97000365348 /* JCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCTableViewCell.h; sourceTree = "<group>"; };
@@ -159,11 +158,10 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				F316C1EF1E0BBFDF006375AE /* For Carthage */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for JCTagListView */,
 				6003F5B5195388D20070C39A /* Tests */,
-				F316C1F61E0BBFF4006375AE /* JCTagListView */,
+				F316C1F61E0BBFF4006375AE /* JCTagListView for Carthage */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				27AFF17168759C92A14AD66C /* Pods */,
@@ -252,7 +250,7 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		F316C1EF1E0BBFDF006375AE /* For Carthage */ = {
+		F316C1F61E0BBFF4006375AE /* JCTagListView for Carthage */ = {
 			isa = PBXGroup;
 			children = (
 				F316C2141E0BC077006375AE /* JCCollectionViewTagFlowLayout.h */,
@@ -261,16 +259,9 @@
 				F316C21B1E0BC085006375AE /* JCTagCell.m */,
 				F316C2161E0BC077006375AE /* JCTagListView.h */,
 				F316C21C1E0BC085006375AE /* JCTagListView.m */,
-			);
-			name = "For Carthage";
-			sourceTree = "<group>";
-		};
-		F316C1F61E0BBFF4006375AE /* JCTagListView */ = {
-			isa = PBXGroup;
-			children = (
-				F316C1F71E0BBFF4006375AE /* JCTagListView.h */,
 				F316C1F81E0BBFF4006375AE /* Info.plist */,
 			);
+			name = "JCTagListView for Carthage";
 			path = JCTagListView;
 			sourceTree = "<group>";
 		};
