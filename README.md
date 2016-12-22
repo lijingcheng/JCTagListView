@@ -12,7 +12,17 @@ Support delete tags and settings tags color.
 
 ## Installation
 
-pod "JCTagListView"
+Installation with CocoaPods
+
+```
+pod "JCTagListView", "1.0.1"
+```
+
+Installation with Carthage
+
+```
+github "lijingcheng/JCTagListView" ~> 1.0.1
+```
 
 ## Usage
 
