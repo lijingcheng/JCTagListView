@@ -7,8 +7,6 @@
 //
 
 #import "JCTagListView.h"
-#import "JCTagCell.h"
-#import "JCCollectionViewTagFlowLayout.h"
 
 @interface JCTagListView ()<UICollectionViewDelegate, UICollectionViewDataSource>
 

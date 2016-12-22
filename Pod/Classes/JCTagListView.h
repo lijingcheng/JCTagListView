@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+// for Carthage
+#import "JCTagCell.h"
+#import "JCCollectionViewTagFlowLayout.h"
+
 typedef void (^JCTagListViewBlock)(NSInteger index);
 
 IB_DESIGNABLE
