@@ -15,13 +15,13 @@ Support delete tags and settings tags color.
 Installation with CocoaPods
 
 ```
-pod "JCTagListView", "1.0.1"
+pod "JCTagListView", "1.0.2"
 ```
 
 Installation with Carthage
 
 ```
-github "lijingcheng/JCTagListView" ~> 1.0.1
+github "lijingcheng/JCTagListView" ~> 1.0.2
 ```
 
 ## Usage

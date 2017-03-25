@@ -71,8 +71,8 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     CGSize maxSize = CGSizeMake(collectionView.frame.size.width - layout.sectionInset.left - layout.sectionInset.right, layout.itemSize.height);
     
     CGRect frame = [self.tags[indexPath.item] boundingRectWithSize:maxSize options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: self.tagTextFont} context:nil];
-    
-    return CGSizeMake(frame.size.width + 20.0f, layout.itemSize.height);
+
+    return CGSizeMake(frame.size.width + 20.0f, frame.size.height + 10.0f);
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
