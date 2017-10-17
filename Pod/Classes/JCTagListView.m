@@ -134,4 +134,20 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     return _collectionView;
 }
 
+- (void)setTags:(NSMutableArray *)tags {
+    _tags = tags;
+    
+    if ([NSThread isMainThread]) {
+        [_collectionView reloadData];
+    }
+}
+
+- (void)setSelectedTags:(NSMutableArray *)selectedTags {
+    _selectedTags = selectedTags;
+    
+    if ([NSThread isMainThread]) {
+        [_collectionView reloadData];
+    }
+}
+
 @end
