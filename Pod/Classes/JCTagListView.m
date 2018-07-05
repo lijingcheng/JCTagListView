@@ -45,6 +45,7 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     _tags = [NSMutableArray array];
     
     _tagStrokeColor = [UIColor lightGrayColor];
+    _tagSelectedStrokeColor = [UIColor lightGrayColor];
     _tagBackgroundColor = [UIColor clearColor];
     _tagTextColor = [UIColor darkGrayColor];
     _tagSelectedTextColor = [UIColor darkGrayColor];
@@ -87,6 +88,7 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     if ([self.selectedTags containsObject:self.tags[indexPath.item]]) {
         cell.backgroundColor = self.tagSelectedBackgroundColor;
         cell.titleLabel.textColor = self.tagSelectedTextColor;
+        cell.layer.borderColor = self.tagSelectedStrokeColor.CGColor;
     }
     
     return cell;
