@@ -54,7 +54,7 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     
     _tagCornerRadius = 10.0f;
     
-   [self addSubview:self.collectionView];
+    [self addSubview:self.collectionView];
 }
 
 - (void)setCompletionBlockWithSelected:(JCTagListViewBlock)completionBlock {
@@ -72,7 +72,7 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     CGSize maxSize = CGSizeMake(collectionView.frame.size.width - layout.sectionInset.left - layout.sectionInset.right, layout.itemSize.height);
     
     CGRect frame = [self.tags[indexPath.item] boundingRectWithSize:maxSize options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: self.tagTextFont} context:nil];
-
+    
     return CGSizeMake(frame.size.width + 20.0f, frame.size.height + 10.0f);
 }
 
@@ -101,12 +101,14 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
         if ([self.selectedTags containsObject:self.tags[indexPath.item]]) {
             cell.backgroundColor = self.tagBackgroundColor;
             cell.titleLabel.textColor = self.tagTextColor;
+            cell.layer.borderColor = self.tagStrokeColor.CGColor;
             
             [self.selectedTags removeObject:self.tags[indexPath.item]];
         }
         else {
             cell.backgroundColor = self.tagSelectedBackgroundColor;
             cell.titleLabel.textColor = self.tagSelectedTextColor;
+            cell.layer.borderColor = self.tagSelectedStrokeColor.CGColor;
             
             [self.selectedTags addObject:self.tags[indexPath.item]];
         }
