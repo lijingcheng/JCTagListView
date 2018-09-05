@@ -18,6 +18,7 @@ IB_DESIGNABLE
 @interface JCTagListView : UIView
 
 @property (nonatomic, strong) IBInspectable UIColor *tagStrokeColor; // default: lightGrayColor
+@property (nonatomic, strong) IBInspectable UIColor *tagSelectedStrokeColor; // default: lightGrayColor
 @property (nonatomic, strong) IBInspectable UIColor *tagTextColor; // default: darkGrayColor
 @property (nonatomic, strong) IBInspectable UIColor *tagSelectedTextColor; // default: darkGrayColor
 @property (nonatomic, strong) IBInspectable UIColor *tagBackgroundColor; // default: clearColor
