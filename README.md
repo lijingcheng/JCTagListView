@@ -5,9 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/JCTagListView.svg?style=flat)](https://cocoapods.org/pods/JCTagListView)
 [![Platform](https://img.shields.io/cocoapods/p/JCTagListView.svg?style=flat)](https://cocoapods.org/pods/JCTagListView)
 
-![](./ScreenShot.png1 =300)
-![](./ScreenShot.png2 =300)
-![](./ScreenShot.png3 =300)
+<img width=“320” src=“./ScreenShot.png1”> 
+<img width=“320” src=“./ScreenShot.png2”> 
+<img width=“320” src=“./ScreenShot.png3”> 
 
 ## Example
 
@@ -19,7 +19,7 @@ JCTagListView is available through [CocoaPods](https://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'JCTagListView'
+pod 'JCTagListView', '2.0.0'
 ```
 
 ## Usage
