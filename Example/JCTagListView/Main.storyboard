@@ -1,122 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tXg-JF-3Hi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9zs-vg-Byf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="2Ce-oQ-VPd">
+        <!--JCTableViewController-->
+        <scene sceneID="8YM-OZ-jGC">
             <objects>
-                <navigationController id="tXg-JF-3Hi" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U5Y-Jy-mcc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="whP-gf-Uak" kind="relationship" relationship="rootViewController" id="LTY-Yc-OXT"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dVc-m7-Nza" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-573" y="453"/>
-        </scene>
-        <!--JCTagListView-->
-        <scene sceneID="wQg-tq-qST">
-            <objects>
-                <viewController id="whP-gf-Uak" customClass="JCViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                <tableViewController storyboardIdentifier="JCTableViewController" id="juq-8Y-uMU" customClass="JCTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QkV-b1-cfP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNz-gg-734" customClass="JCTagListView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="UNz-gg-734" secondAttribute="bottom" id="KeM-3L-LHZ"/>
-                            <constraint firstAttribute="trailing" secondItem="UNz-gg-734" secondAttribute="trailing" id="cic-xm-XXX"/>
-                            <constraint firstItem="UNz-gg-734" firstAttribute="top" secondItem="TpU-gO-2f1" secondAttribute="top" id="cl4-gn-cyJ"/>
-                            <constraint firstItem="UNz-gg-734" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="zvD-iB-gB3"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="JCTagListView" id="cMv-9O-1me">
-                        <barButtonItem key="leftBarButtonItem" title="cell" id="D0C-wD-RMT">
-                            <connections>
-                                <action selector="openTableViewController:" destination="whP-gf-Uak" id="OQC-q1-Fjw"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="delete" id="GSW-Id-tuZ">
-                            <connections>
-                                <action selector="delete:" destination="whP-gf-Uak" id="izx-oK-L7N"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="tagListView" destination="UNz-gg-734" id="81B-2x-LV8"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="185" y="453"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="ic0-WD-tho">
-            <objects>
-                <tableViewController storyboardIdentifier="JCTableViewController" id="U23-N7-vNa" customClass="JCTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="LZ2-Cs-KP5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="separatorColor" red="0.39607843139999999" green="0.61568627450000002" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="xgA-4v-e4S">
+                            <rect key="frame" x="0.0" y="72" width="375" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" id="hch-gG-zQZ" customClass="JCTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" id="D28-dM-xo5" customClass="JCTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hch-gG-zQZ" id="Ycz-5p-rBR">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D28-dM-xo5" id="7uO-du-zrt">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwo-Ua-FJX" customClass="JCTagListView">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2mU-ec-dTA" customClass="JCTagListView">
+                                            <rect key="frame" x="10" y="10" width="355" height="23.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="Fwo-Ua-FJX" secondAttribute="trailing" id="AVS-mB-L0o"/>
-                                        <constraint firstAttribute="bottom" secondItem="Fwo-Ua-FJX" secondAttribute="bottom" constant="0.5" id="Fbu-iH-3G5"/>
-                                        <constraint firstItem="Fwo-Ua-FJX" firstAttribute="leading" secondItem="Ycz-5p-rBR" secondAttribute="leading" id="ayy-EO-opd"/>
-                                        <constraint firstItem="Fwo-Ua-FJX" firstAttribute="top" secondItem="Ycz-5p-rBR" secondAttribute="top" id="k8M-ew-oGw"/>
+                                        <constraint firstItem="2mU-ec-dTA" firstAttribute="top" secondItem="7uO-du-zrt" secondAttribute="top" constant="10" id="Dom-Wg-9Wh"/>
+                                        <constraint firstAttribute="trailing" secondItem="2mU-ec-dTA" secondAttribute="trailing" constant="10" id="EqI-R1-sMy"/>
+                                        <constraint firstItem="2mU-ec-dTA" firstAttribute="leading" secondItem="7uO-du-zrt" secondAttribute="leading" constant="10" id="Oqy-iM-m6H"/>
+                                        <constraint firstAttribute="bottom" secondItem="2mU-ec-dTA" secondAttribute="bottom" constant="10" id="hor-Lz-FSn"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <connections>
-                                    <outlet property="tagListView" destination="Fwo-Ua-FJX" id="2Ih-pM-2pJ"/>
+                                    <outlet property="tagListView" destination="2mU-ec-dTA" id="oAt-L2-TIU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="U23-N7-vNa" id="ZIu-W2-6pj"/>
-                            <outlet property="delegate" destination="U23-N7-vNa" id="oN8-2w-ev7"/>
+                            <outlet property="dataSource" destination="juq-8Y-uMU" id="ODT-YO-IfB"/>
+                            <outlet property="delegate" destination="juq-8Y-uMU" id="z91-R9-V67"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="JCTableViewController" id="U0M-2G-el4"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ngm-sW-PFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NBa-ss-JHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="840" y="453"/>
+            <point key="canvasLocation" x="326" y="48"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Km-HF-5yh">
+            <objects>
+                <navigationController id="9zs-vg-Byf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lEd-K4-1FF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ejf-Hz-Whv" kind="relationship" relationship="rootViewController" id="Kjf-UZ-Pah"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z4a-ba-VJk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1218" y="49"/>
+        </scene>
+        <!--JCTagListView-->
+        <scene sceneID="Elf-9B-tCw">
+            <objects>
+                <viewController storyboardIdentifier="JCViewController" id="ejf-Hz-Whv" customClass="JCViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="olF-i2-R2G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZW-d0-MTx" customClass="JCTagListView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g64-5F-5ja" firstAttribute="trailing" secondItem="cZW-d0-MTx" secondAttribute="trailing" id="BwD-6a-UMc"/>
+                            <constraint firstItem="g64-5F-5ja" firstAttribute="bottom" secondItem="cZW-d0-MTx" secondAttribute="bottom" id="Xim-Zf-pAB"/>
+                            <constraint firstItem="cZW-d0-MTx" firstAttribute="top" secondItem="g64-5F-5ja" secondAttribute="top" id="jKJ-sU-1ez"/>
+                            <constraint firstItem="cZW-d0-MTx" firstAttribute="leading" secondItem="g64-5F-5ja" secondAttribute="leading" id="w3X-Yv-maR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g64-5F-5ja"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="JCTagListView" id="oJF-4I-2LW">
+                        <barButtonItem key="leftBarButtonItem" title="InCell" id="FYi-U9-I4F">
+                            <connections>
+                                <action selector="openTableViewController:" destination="ejf-Hz-Whv" id="e2F-Pz-KAG"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Selected" id="Yfb-t0-5QI">
+                            <connections>
+                                <action selector="selected:" destination="ejf-Hz-Whv" id="Fbc-sE-rv1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tagListView" destination="cZW-d0-MTx" id="Lka-rd-jaz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9o-Ow-J0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-471" y="45"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="delete" width="24" height="24"/>
-    </resources>
 </document>

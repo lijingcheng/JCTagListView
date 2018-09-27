@@ -1,30 +1,17 @@
-# JCTagListView
+//
+//  JCTagListView.h
+//  JCTagListView
+//
+//  Created by 李京城 on 15/7/3.
+//  Copyright (c) 2015年 李京城. All rights reserved.
+//
 
-[![Stars](https://img.shields.io/redmine/plugin/stars/redmine_xlsx_format_issue_exporter.svg)](https://cocoapods.org/pods/FMDBHelper)
-[![Version](https://img.shields.io/cocoapods/v/JCTagListView.svg?style=flat)](https://cocoapods.org/pods/JCTagListView)
-[![License](https://img.shields.io/cocoapods/l/JCTagListView.svg?style=flat)](https://cocoapods.org/pods/JCTagListView)
-[![Platform](https://img.shields.io/cocoapods/p/JCTagListView.svg?style=flat)](https://cocoapods.org/pods/JCTagListView)
+#import <UIKit/UIKit.h>
 
-![](./ScreenShot.png1 =300)
-![](./ScreenShot.png2 =300)
-![](./ScreenShot.png3 =300)
+NS_ASSUME_NONNULL_BEGIN
 
-## Example
+typedef void (^JCTagListViewBlock)(NSInteger index);
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Installation
-
-JCTagListView is available through [CocoaPods](https://cocoapods.org). To install 
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'JCTagListView'
-```
-
-## Usage
-
-```objc
 IB_DESIGNABLE
 @interface JCTagListView : UIView
 
@@ -58,12 +45,5 @@ IB_DESIGNABLE
 - (void)reloadData;
 
 @end
-```
 
-## Author
-
-李京城
-
-## License
-
-JCTagListView is available under the MIT license. See the LICENSE file for more info.
+NS_ASSUME_NONNULL_END

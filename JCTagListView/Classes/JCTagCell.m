@@ -13,8 +13,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         self.layer.masksToBounds = YES;
-        self.layer.borderWidth = 1.0f;
-
+        
         [self.contentView addSubview:self.titleLabel];
     }
     
@@ -24,7 +23,7 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    self.titleLabel.frame = self.bounds;
+    self.titleLabel.frame = CGRectMake(self.contentInset.left, self.contentInset.top, self.bounds.size.width - self.contentInset.left - self.contentInset.right, self.bounds.size.height - self.contentInset.top - self.contentInset.bottom);
 }
 
 - (void)prepareForReuse {
@@ -36,13 +35,12 @@
 #pragma mark - setter/getter
 
 - (UILabel *)titleLabel {
-    if (!_titleLabel) {
-        _titleLabel = [[UILabel alloc] initWithFrame:self.bounds];
-        _titleLabel.textAlignment = NSTextAlignmentCenter;
-        _titleLabel.font = [UIFont systemFontOfSize:14.0f];
+    if (!_textLabel) {
+        _textLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        _textLabel.textAlignment = NSTextAlignmentCenter;
     }
     
-    return _titleLabel;
+    return _textLabel;
 }
 
 @end

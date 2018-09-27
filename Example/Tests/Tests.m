@@ -2,8 +2,8 @@
 //  JCTagListViewTests.m
 //  JCTagListViewTests
 //
-//  Created by lijingcheng on 07/03/2015.
-//  Copyright (c) 2015 lijingcheng. All rights reserved.
+//  Created by lijingcheng on 09/25/2018.
+//  Copyright (c) 2018 lijingcheng. All rights reserved.
 //
 
 @import XCTest;
@@ -28,7 +28,8 @@
 
 - (void)testExample
 {
-    XCTAssert(YES, @"pass");
+    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
 
 @end
+

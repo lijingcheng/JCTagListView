@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface JCTagCell : UICollectionViewCell
 
-@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UILabel *textLabel;
+
+@property (nonatomic, assign) UIEdgeInsets contentInset;
 
 @end
+
+NS_ASSUME_NONNULL_END

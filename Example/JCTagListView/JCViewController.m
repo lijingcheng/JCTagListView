@@ -2,13 +2,13 @@
 //  JCViewController.m
 //  JCTagListView
 //
-//  Created by lijingcheng on 07/03/2015.
-//  Copyright (c) 2014 lijingcheng. All rights reserved.
+//  Created by lijingcheng on 09/25/2018.
+//  Copyright (c) 2018 lijingcheng. All rights reserved.
 //
 
 #import "JCViewController.h"
-#import "JCTagListView.h"
 #import "JCTableViewController.h"
+#import "JCTagListView.h"
 
 @interface JCViewController ()
 
@@ -20,32 +20,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    self.tagListView.supportSelected = YES;
+    self.tagListView.supportMultipleSelected = YES;
     
-    self.tagListView.canSelectTags = YES;
-//    self.tagListView.tagStrokeColor = [UIColor redColor];
-//    self.tagListView.tagBackgroundColor = [UIColor orangeColor];
-//    self.tagListView.tagTextColor = [UIColor greenColor];
-//    self.tagListView.tagSelectedBackgroundColor = [UIColor yellowColor];
-    self.tagListView.tagSelectedTextColor = [UIColor blackColor];
-    self.tagListView.tagCornerRadius = 5.0f;
+    self.tagListView.tags = @[@"NSStNSStringNSStringNSStringNSStringNSStringNSStringNSStringring", @"NSMutableString", @"NSArray", @"UITapGestureRecognizer", @"IBOutlet", @"IBAction", @"id", @"UIView", @"UIStatusBar", @"UITableViewController", @"UIStepper", @"UISegmentedControl", @"UICollectionViewController", @"UISearchBar", @"UIToolbar", @"UIPageControl", @"UIActionSheet", @"NSMutableArray", @"NSDictionary", @"NSMutableDictionary", @"NSSet", @"NSMutableSet", @"NSData", @"NSMutableData", @"NSDate", @"NSCalendar", @"UIButton", @"UILabel", @"UITextField", @"UITextView", @"UIImageView", @"UITableView", @"UICollectionView", @"UIViewController"];
     
-    [self.tagListView.tags addObjectsFromArray:@[@"NSString", @"NSMutableString", @"NSArray", @"UIAlertView", @"UITapGestureRecognizer", @"IBOutlet", @"IBAction", @"id", @"UIView", @"UIStatusBar", @"UITableViewController", @"UIStepper", @"UISegmentedControl", @"UICollectionViewController", @"UISearchBar", @"UIToolbar", @"UIPageControl", @"UIActionSheet", @"NSMutableArray", @"NSDictionary", @"NSMutableDictionary", @"NSSet", @"NSMutableSet", @"NSData", @"NSMutableData", @"NSDate", @"NSCalendar", @"UIButton", @"UILabel", @"UITextField", @"UITextView", @"UIImageView", @"UITableView", @"UICollectionView", @"UIViewController"]];
-    [self.tagListView.selectedTags addObjectsFromArray:@[@"UIStatusBar", @"UITableViewController", @"UIStepper", @"UISegmentedControl", @"UICollectionViewController", @"UISearchBar", @"UIToolbar", @"NSMutableData", @"NSDate", @"NSCalendar", @"UIButton", @"UILabel", @"UITextField", @"UITextView", @"UIImageView", @"UITableView", @"UICollectionView", @"UIViewController"]];
+    self.tagListView.selectedTags = @[@"NSMutableString", @"UITableViewController", @"UIStepper", @"UISegmentedControl", @"UICollectionViewController", @"UISearchBar", @"UIToolbar", @"NSMutableData", @"NSDate", @"NSCalendar", @"UIButton", @"UILabel", @"UITextField"].mutableCopy;
     
-    [self.tagListView setCompletionBlockWithSelected:^(NSInteger index) {
-        NSLog(@"______%ld______", (long)index);
+    [self.tagListView didSelectItem:^(NSInteger index) {
+        NSLog(@"%@", @(index));
     }];
-    
-    NSLog(@"\n\n🍀🍀🍀 The warnings in the console can be ignored, the actual use of lib will not exist. 🍀🍀🍀");
 }
 
 #pragma mark - IBAction
 
-- (IBAction)delete:(id)sender {
-    [self.tagListView.tags removeObjectsInArray:self.tagListView.selectedTags];
-    [self.tagListView.selectedTags removeAllObjects];
-    
-    [self.tagListView.collectionView reloadData];
+- (IBAction)selected:(id)sender {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Selected Index" message:[self.tagListView.selectedTagsIndex description] preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction: [UIAlertAction actionWithTitle:@"Confirm" style:UIAlertActionStyleCancel handler:nil]];
+
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 - (IBAction)openTableViewController:(id)sender {

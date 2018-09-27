@@ -2,8 +2,8 @@
 //  JCViewController.h
 //  JCTagListView
 //
-//  Created by lijingcheng on 07/03/2015.
-//  Copyright (c) 2014 lijingcheng. All rights reserved.
+//  Created by lijingcheng on 09/25/2018.
+//  Copyright (c) 2018 lijingcheng. All rights reserved.
 //
 
 @import UIKit;

@@ -1,11 +1,9 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, "8.0"
+platform :ios, '9.0'
+
+use_frameworks!
 
 target 'JCTagListView_Example' do
-  pod "JCTagListView", :path => "../"
-end
-
-target 'JCTagListView_Tests' do
-  pod "JCTagListView", :path => "../"
+  pod 'JCTagListView', :path => '../'
 end
