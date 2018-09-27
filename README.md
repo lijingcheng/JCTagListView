@@ -5,9 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/JCTagListView.svg?style=flat)](https://cocoapods.org/pods/JCTagListView)
 [![Platform](https://img.shields.io/cocoapods/p/JCTagListView.svg?style=flat)](https://cocoapods.org/pods/JCTagListView)
 
-<img width=“320” src=“./ScreenShot.png1”> 
-<img width=“320” src=“./ScreenShot.png2”> 
-<img width=“320” src=“./ScreenShot.png3”> 
+<img width=“320” src=“./ScreenShot1.png”> 
+<img width=“320” src=“./ScreenShot2.png”> 
+<img width=“320” src=“./ScreenShot3.png”> 
 
 ## Example
 
